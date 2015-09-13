@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="124" id="KGk-i7-Jjw" customClass="MGActivityCell">
+            <rect key="frame" x="0.0" y="-1" width="320" height="124"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="百年优才" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VLG-uj-M4p">
+                        <rect key="frame" x="265" y="12" width="50" height="14"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="50" id="MWw-BB-g7f"/>
+                            <constraint firstAttribute="height" constant="14" id="mjx-3l-bqP"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="结束日：2015-12-31" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nAD-w9-seX">
+                        <rect key="frame" x="5" y="79" width="78" height="34"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="34" id="0SY-hN-2c3"/>
+                            <constraint firstAttribute="width" constant="78" id="Uo7-eW-fX2"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="结束日：2015-12-31" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yty-OV-Mcv">
+                        <rect key="frame" x="93" y="79" width="78" height="34"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="内蒙古" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="scf-w0-meZ">
+                        <rect key="frame" x="279" y="81" width="36" height="14"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="14" id="pbb-ZH-Tv7"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="活动和哈哈考试考试考核是是卡号是客户说哈斯卡哈是" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RtQ-1m-1KG">
+                        <rect key="frame" x="5" y="10" width="255" height="36"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="yty-OV-Mcv" firstAttribute="centerY" secondItem="nAD-w9-seX" secondAttribute="centerY" id="9eo-tf-n6X"/>
+                    <constraint firstItem="yty-OV-Mcv" firstAttribute="height" secondItem="nAD-w9-seX" secondAttribute="height" id="HC4-QJ-yCH"/>
+                    <constraint firstItem="nAD-w9-seX" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="HO1-GU-KWR"/>
+                    <constraint firstItem="scf-w0-meZ" firstAttribute="top" secondItem="yty-OV-Mcv" secondAttribute="top" constant="2" id="L18-yg-SlJ"/>
+                    <constraint firstItem="VLG-uj-M4p" firstAttribute="leading" secondItem="RtQ-1m-1KG" secondAttribute="trailing" constant="5" id="NPQ-bx-nPp"/>
+                    <constraint firstItem="RtQ-1m-1KG" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="NbE-pJ-5p8"/>
+                    <constraint firstItem="yty-OV-Mcv" firstAttribute="leading" secondItem="nAD-w9-seX" secondAttribute="trailing" constant="10" id="Vc2-kC-Ibx"/>
+                    <constraint firstItem="yty-OV-Mcv" firstAttribute="width" secondItem="nAD-w9-seX" secondAttribute="width" id="ZrX-rY-rDw"/>
+                    <constraint firstItem="RtQ-1m-1KG" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="cNQ-g6-UhO"/>
+                    <constraint firstItem="RtQ-1m-1KG" firstAttribute="top" secondItem="VLG-uj-M4p" secondAttribute="top" constant="-2" id="eJO-Xb-v4V"/>
+                    <constraint firstAttribute="trailing" secondItem="VLG-uj-M4p" secondAttribute="trailing" constant="5" id="qJJ-A0-Ywg"/>
+                    <constraint firstAttribute="bottom" secondItem="nAD-w9-seX" secondAttribute="bottom" constant="10" id="rTj-Wx-VKj"/>
+                    <constraint firstAttribute="trailing" secondItem="scf-w0-meZ" secondAttribute="trailing" constant="5" id="uS7-UV-XDC"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="lblCitivityName" destination="RtQ-1m-1KG" id="PaV-ZV-j3f"/>
+                <outlet property="lblComName" destination="VLG-uj-M4p" id="lHl-fo-SQP"/>
+                <outlet property="lblEndDate" destination="yty-OV-Mcv" id="ke0-Tw-dT4"/>
+                <outlet property="lblResion" destination="scf-w0-meZ" id="Da9-E7-BGZ"/>
+                <outlet property="lblStartDate" destination="nAD-w9-seX" id="Meo-MT-tiB"/>
+            </connections>
+            <point key="canvasLocation" x="290" y="175"/>
+        </tableViewCell>
+    </objects>
+</document>

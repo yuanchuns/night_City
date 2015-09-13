@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<string>江泽民</string>
+	<string>法轮功</string>
+	<string>公证处电话</string>
+	<string>089.886</string>
+	<string>老虎机</string>
+	<string>腾讯{4}提示</string>
+	<string>腾讯{4}公司</string>
+	<string>腾讯{4}客服</string>
+	<string>领取{5}奖金</string>
+	<string>热线电话</string>
+	<string>订票电话</string>
+	<string>特价机票</string>
+	<string>发{4}票</string>
+	<string>發{4}票</string>
+	<string>电动车</string>
+	<string>髮{4}票</string>
+	<string>性爱</string>
+	<string>朱镕基</string>
+	<string>一品购物网</string>
+	<string>机票订购</string>
+	<string>服务器托管</string>
+	<string>騰訊</string>
+	<string>上海团购网</string>
+	<string>监听软件</string>
+	<string>定位器</string>
+	<string>百拓商旅网</string>
+	<string>非常6+1</string>
+	<string>www.ciidsh.com</string>
+	<string>同性恋</string>
+	<string>小姐</string>
+	<string>kecctv</string>
+	<string>kecctv.com</string>
+	<string>幸运用户</string>
+	<string>枪</string>
+	<string>13794351304</string>
+	<string>槍</string>
+	<string>骏豪木业</string>
+	<string>阴茎</string>
+	<string>办{15}Q</string>
+	<string>办{10}证</string>
+	<string>辧{15}Q</string>
+	<string>證{15}Q</string>
+	<string>证{15}Q</string>
+	<string>18638629001</string>
+	<string>英泰装饰</string>
+	<string>美国喜适涂料公司</string>
+	<string>QQ：841931930</string>
+	<string>18017428678</string>
+	<string>2ggo</string>
+	<string>44aab</string>
+	<string>huopinjie</string>
+	<string>d{11}|qq|d{3,4}-d{7,8}</string>
+	<string>18717849497</string>
+	<string>18817610893</string>
+	<string>找 酒 店 小 姐 包 夜 服 务</string>
+	<string>小{1}姐</string>
+	<string>小 姐</string>
+	<string>小妹</string>
+	<string>香港占中</string>
+	<string>京东商城人工客服是多少</string>
+	<string>香港中环</string>
+	<string>香港民主</string>
+	<string>香港大学生</string>
+</array>
+</plist>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="MGHomeItemCell">
+            <rect key="frame" x="0.0" y="0.0" width="144" height="135"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="144" height="135"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ay1-xM-APX">
+                        <rect key="frame" x="54" y="116" width="36" height="14"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="14" id="McZ-qU-2PO"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LQiconClick" translatesAutoresizingMaskIntoConstraints="NO" id="2xh-d0-0Xi">
+                        <rect key="frame" x="52" y="66" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="ISV-fv-5aG"/>
+                            <constraint firstAttribute="width" constant="40" id="XTa-ZP-EOi"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="ay1-xM-APX" secondAttribute="bottom" constant="5" id="0m0-MP-AD3"/>
+                <constraint firstItem="2xh-d0-0Xi" firstAttribute="centerX" secondItem="ay1-xM-APX" secondAttribute="centerX" id="2zK-fG-MPI"/>
+                <constraint firstAttribute="centerX" secondItem="2xh-d0-0Xi" secondAttribute="centerX" id="bhI-ml-f0I"/>
+                <constraint firstItem="ay1-xM-APX" firstAttribute="top" secondItem="2xh-d0-0Xi" secondAttribute="bottom" constant="10" id="ztu-Ub-Ro8"/>
+            </constraints>
+            <size key="customSize" width="144" height="135"/>
+            <connections>
+                <outlet property="imavHead" destination="2xh-d0-0Xi" id="dfZ-tw-spd"/>
+                <outlet property="lblTitle" destination="ay1-xM-APX" id="Ylo-Ng-rA3"/>
+            </connections>
+            <point key="canvasLocation" x="424" y="241.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="LQiconClick" width="40" height="40"/>
+    </resources>
+</document>
