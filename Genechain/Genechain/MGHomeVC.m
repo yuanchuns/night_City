@@ -31,39 +31,39 @@
     self.navigationItem.leftBarButtonItem = nil;
     
     
-    self.cellImaHead = [[EImavCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:nil];
-    self.cellImaHead.frame = CGRectMake(0, 0, kScreenWidth, 128);
-    self.cellImaHead.autoScr.delegate = self;
-    __weak typeof(self) weak = self;
-    [self.cellImaHead.autoScr setScorllIndexBlock:^(NSUInteger index) {
-        
-        if (index < weak.arrData.count) {
-            MGHomeImaModel *model = weak.arrData[index];
-            weak.cellImaHead.lblInfo.text = model.describe;
-            weak.cellImaHead.control.currentPage = index;
-        }
-        
-    }];
-    [self.view addSubview:self.cellImaHead];
+//    self.cellImaHead = [[EImavCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:nil];
+//    self.cellImaHead.frame = CGRectMake(0, 0, kScreenWidth, 128);
+//    self.cellImaHead.autoScr.delegate = self;
+//    __weak typeof(self) weak = self;
+//    [self.cellImaHead.autoScr setScorllIndexBlock:^(NSUInteger index) {
+//        
+//        if (index < weak.arrData.count) {
+//            MGHomeImaModel *model = weak.arrData[index];
+//            weak.cellImaHead.lblInfo.text = model.describe;
+//            weak.cellImaHead.control.currentPage = index;
+//        }
+//        
+//    }];
+//    [self.view addSubview:self.cellImaHead];
     
   
     
-    UICollectionViewFlowLayout *flowLayOut = [[UICollectionViewFlowLayout alloc] init];
-    self.collectionView = [[UICollectionView alloc] initWithFrame:CGRectMake(0, self.cellImaHead.bottom, kScreenWidth, kScreenHeight-self.cellImaHead.bottom - kNavBarHeight) collectionViewLayout:flowLayOut];
-    self.collectionView.backgroundColor = [UIColor colorWithHexString:@"#f2f2f2"];
-    self.collectionView.dataSource = self;
-    self.collectionView.delegate = self;
-    self.collectionView.showsHorizontalScrollIndicator = NO;
-    self.collectionView.showsVerticalScrollIndicator = NO;
-    self.collectionView.scrollEnabled = NO;
-    [self.view addSubview:self.collectionView];
-    [self.collectionView registerNib:[UINib nibWithNibName:MGHomeItemCellReuseRedifilerAndName bundle:nil] forCellWithReuseIdentifier:MGHomeItemCellReuseRedifilerAndName];
-    
-    self.arrTitles = @[@"安全设置",@"日程",@"工具",@"测评",@"费用归属"];
-    [self requestData];
-    
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(requestData) name:kMGLoginSuccessNotification object:nil];
-     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(headImaIsChange) name:kMGChangeHeadImaSuccessNotificationName object:nil];
+//    UICollectionViewFlowLayout *flowLayOut = [[UICollectionViewFlowLayout alloc] init];
+//    self.collectionView = [[UICollectionView alloc] initWithFrame:CGRectMake(0, self.cellImaHead.bottom, kScreenWidth, kScreenHeight-self.cellImaHead.bottom - kNavBarHeight) collectionViewLayout:flowLayOut];
+//    self.collectionView.backgroundColor = [UIColor colorWithHexString:@"#f2f2f2"];
+//    self.collectionView.dataSource = self;
+//    self.collectionView.delegate = self;
+//    self.collectionView.showsHorizontalScrollIndicator = NO;
+//    self.collectionView.showsVerticalScrollIndicator = NO;
+//    self.collectionView.scrollEnabled = NO;
+//    [self.view addSubview:self.collectionView];
+//    [self.collectionView registerNib:[UINib nibWithNibName:MGHomeItemCellReuseRedifilerAndName bundle:nil] forCellWithReuseIdentifier:MGHomeItemCellReuseRedifilerAndName];
+//    
+//    self.arrTitles = @[@"安全设置",@"日程",@"工具",@"测评",@"费用归属"];
+//    [self requestData];
+//    
+//    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(requestData) name:kMGLoginSuccessNotification object:nil];
+//     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(headImaIsChange) name:kMGChangeHeadImaSuccessNotificationName object:nil];
     [self headImaIsChange];
 }
 
