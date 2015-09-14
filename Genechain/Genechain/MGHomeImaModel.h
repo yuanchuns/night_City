@@ -8,6 +8,8 @@
 
 #import "T2TObject.h"
 
+
+//轮播图参数
 @interface MGHomeImaModel : T2TObject
 //describe": "公开课及沙龙",
 //"imgUrl": "http://223.4.94.140:8091/pm/down/clientImage/1.jpg",
