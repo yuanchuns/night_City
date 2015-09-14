@@ -64,7 +64,7 @@
 //    
 //    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(requestData) name:kMGLoginSuccessNotification object:nil];
 //     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(headImaIsChange) name:kMGChangeHeadImaSuccessNotificationName object:nil];
-    [self headImaIsChange];
+//[self headImaIsChange];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
