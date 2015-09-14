@@ -104,66 +104,15 @@ static int  kMGOkStatuCode = 1;
 #pragma mark - url
 #pragma mark - request url
 
-static NSString *const kMGDefaultURL = @"http://erp.gene100.com/%@%@";
-
-//static NSString *const kMGDefaultURL = @"http://223.4.94.140:8091/pm/%@%@";
+static NSString *const kMGDefaultURL = @"http://210.14.73.175:7912/API/Video/GetHotVideo?%@";
 
 static NSString *const kMGDefaultImaURL = @"http://223.4.94.140:8091/pm/down/clientPhoto/%@.jpg";
 //登陆
 static NSString *const kMGLoginUrl   = @"appLogin.do?method=login&word=";
 
-//修改密码
-static NSString *const kMGChangePwdUrl = @"appPerson.do?method=updateLoginPwdByOld&word=";
-// 版本检测
-static NSString *const kMGVersionUrl = @"appManage!version.action?word=";
-//首页
-static NSString *const kMGHomeImaUrl = @"appManage!banner.action?word=";
-//消息中心
-static NSString *const kMGMessageUrl = @"appManage!message.action?word=";
-//测评
-static NSString *const kMGTestUrl = @"appManage!test.action?word=";
-//我的日程
-static NSString *const kMGMineScheduleUrl = @"appSchedule!s102MyScheduleList.action?word=";
-//日程管理
-static NSString *const kMGMangerScheduleUrl =@"appSchedule!s101ScheduleList.action?word=";
-//我的任务
-static NSString *const kMGMineTaskUrl = @"appTask!p201MyTaskList.action?word=";
-//任务确认
-static NSString *const kMGMineTaskConfirmUrl = @"appTask!p202TaskConfirm.action?word=";
-//项目类型
-static NSString *const KMGProjectTypeUrl = @"appSchedule!s100ScheduleKind.action?word=";
-//公司选择
-static NSString *const kMGCommpanyUrl = @"appDept!d100CompayList.action?word=";
-//日程查看
-static NSString *const kMGScheduleDetailUrl = @"appSchedule!s105ScheduleEdit.action?word=";
-static NSString *const kMGAddNewSchduleUrl = @"appSchedule!s103SaveSchedule.action?word=";
-//部门类型
-static NSString *const kMGDepartmentTypeUrl = @"appDept!d101DeptSelect.action?word=";
-//项目选择
-static NSString *const kMGProjectSelectUrl = @"appProject!p101ProjectSelect.action?word=";
-//客户类型ppClient!c101ClientSelect.action?
-static NSString *const kMGClientSelectedUrl = @"appClient!c101ClientSelect.action?word=";
-static NSString *const kMGActivitySelectedUrl_Action = @"appSalon!s201ActivitySelect.action?word=";//活动招生
-static NSString *const kMGActivitySelectedUrl_Exposition = @"appSalon!s202ExpositionSelect.action?word=";//活动展会
-static NSString *const kMGEmployeeSelectedUrl = @"appEmployee!e101EmployeeSelect.action?word=";//员工选择
-static NSString *const kMGEmployeeSelectedUrl_Teacher = @"appEmployee!e102TeacherSelect.action?word=";//员工选择外部
 
-//差旅未分摊
-static NSString *const kMGAirplanScheduleUrl = @"appFlight!w101DealFlightList.action?word=";
-//差旅已分摊
-static NSString *const kMGNotAirplanScheduleUrl = @"appFlight!w102FinishFlightList.action?word=";
-//教具未分摊
-static NSString *const kMGDelaWithBookListScheduleUrl = @"appBook!w201DealBookList.action?word=";
-//教具已分摊
-static NSString *const kMGDelaWithBookListFinishScheduleUrl = @"appBook!w202FinishBookList.action?word=";
-//差旅建立
-static NSString *const kMGTravelSetListInitScheduleUrl = @"appFlight!w103Flight.action?word=";
-//教具建立
-static NSString *const kMGBookSetListInitScheduleUrl = @"appBook!w203Book.action?word=";
-//差旅建立任务选择
-static NSString *const kMGTravel_Select_Task_ScheduleUrl = @"appTask!p301ProjetTaskSelect.action?word=";
-//差旅建立选择类别
-static NSString *const kMGTravel_Select_Kind_ScheduleUrl = @"appManage!w100ExpenseType.action?word=";
+
+
 
 
 NS_INLINE NSString *getImaUrlWithName(NSString *name){

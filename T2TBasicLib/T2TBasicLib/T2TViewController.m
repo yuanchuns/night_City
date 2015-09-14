@@ -16,6 +16,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+
     self.view.backgroundColor = [UIColor colorWithHexString:@"#f2f2f2"];
     self.navigationItem.leftBarButtonItem = [T2TView backItemWithTarget:self];
     

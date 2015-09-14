@@ -10,5 +10,9 @@
 static NSString *const MGHomeItemCellReuseRedifilerAndName = @"FirCollCell";
 
 @interface FirCollCell : UICollectionViewCell
+@property (weak, nonatomic) IBOutlet UIImageView *headImage;
+@property (weak, nonatomic) IBOutlet UILabel *nameLB;
+@property (weak, nonatomic) IBOutlet UIImageView *VideoImage;
+@property (weak, nonatomic) IBOutlet UILabel *contentLB;
 
 @end

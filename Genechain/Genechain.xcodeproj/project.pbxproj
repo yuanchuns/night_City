@@ -58,6 +58,7 @@
 		A3C171811BA6634400CFC775 /* FivViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A3C1717F1BA6634400CFC775 /* FivViewController.xib */; };
 		A3C1718F1BA686C200CFC775 /* FirCollCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A3C1718D1BA686C200CFC775 /* FirCollCell.m */; };
 		A3C171901BA686C200CFC775 /* FirCollCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A3C1718E1BA686C200CFC775 /* FirCollCell.xib */; };
+		A3C171931BA6A24B00CFC775 /* CommpraiseView.m in Sources */ = {isa = PBXBuildFile; fileRef = A3C171921BA6A24B00CFC775 /* CommpraiseView.m */; };
 		A3EE25EE1B8D93DD00D3F476 /* GTMBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = A3EE25EC1B8D93DD00D3F476 /* GTMBase64.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		BC2678311B8B493A0065F3AE /* RadioBox.m in Sources */ = {isa = PBXBuildFile; fileRef = BC26782E1B8B493A0065F3AE /* RadioBox.m */; };
 		BC2678321B8B493A0065F3AE /* RadioGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = BC2678301B8B493A0065F3AE /* RadioGroup.m */; };
@@ -207,6 +208,8 @@
 		A3C1718C1BA686C200CFC775 /* FirCollCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirCollCell.h; sourceTree = "<group>"; };
 		A3C1718D1BA686C200CFC775 /* FirCollCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirCollCell.m; sourceTree = "<group>"; };
 		A3C1718E1BA686C200CFC775 /* FirCollCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FirCollCell.xib; sourceTree = "<group>"; };
+		A3C171911BA6A24B00CFC775 /* CommpraiseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommpraiseView.h; sourceTree = "<group>"; };
+		A3C171921BA6A24B00CFC775 /* CommpraiseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommpraiseView.m; sourceTree = "<group>"; };
 		A3EE25EB1B8D93DD00D3F476 /* GTMBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMBase64.h; sourceTree = "<group>"; };
 		A3EE25EC1B8D93DD00D3F476 /* GTMBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMBase64.m; sourceTree = "<group>"; };
 		A3EE25ED1B8D93DD00D3F476 /* GTMDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMDefines.h; sourceTree = "<group>"; };
@@ -501,6 +504,8 @@
 				4DC2F3171B66239300099A35 /* MGToolHomeVC.m */,
 				BC349A1D1B6A4C3B00F074ED /* MGToolWebVc.h */,
 				BC349A1E1B6A4C3B00F074ED /* MGToolWebVc.m */,
+				A3C171911BA6A24B00CFC775 /* CommpraiseView.h */,
+				A3C171921BA6A24B00CFC775 /* CommpraiseView.m */,
 			);
 			name = Tool;
 			sourceTree = "<group>";
@@ -968,6 +973,7 @@
 				4DC2F3031B66169400099A35 /* MGLoginVC.m in Sources */,
 				A33643A61B905C3C001EAA03 /* UIView+WY.m in Sources */,
 				BCCDA0CD1B68FAAA004A535D /* PCLockLabel.m in Sources */,
+				A3C171931BA6A24B00CFC775 /* CommpraiseView.m in Sources */,
 				BCCDA0D21B68FAC4004A535D /* GestureVerifyViewController.m in Sources */,
 				BCC02BEF1B860165003832C1 /* MGMsgDetailVc.m in Sources */,
 				BC270F0B1B78C4BD00F63F81 /* RATreeView+TableViewDelegate.m in Sources */,
