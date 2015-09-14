@@ -60,7 +60,7 @@
 - (void)initializeWithImages:(NSArray *)imgArr titles:(NSArray *)titleArr
 {
     
-    UIImage *bgImg = [self imageWithColor:[UIColor colorWithRed:245/255.0 green:245/255.0 blue:245/255.0 alpha:0.9]];
+    UIImage *bgImg = [self imageWithColor:[UIColor colorWithRed:0.13f green:0.13f blue:0.15f alpha:1.00f]];
     [self.tabBar setBackgroundImage:bgImg];
 
 
@@ -82,12 +82,10 @@
 - (UITabBarItem *)tabBarItem:(NSString *)title image:(NSString *)imgName selectedImage:(NSString *)selectedImage
 {
     UIImage *sImage = [UIImage imageNamed:selectedImage];
-    
     UITabBarItem *item = [[UITabBarItem alloc] initWithTitle:title image:[UIImage imageNamed:imgName] selectedImage:[sImage imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]];
-    
-    item.titlePositionAdjustment = UIOffsetMake(0, -3);
-//    item.imageInsets = UIEdgeInsetsMake(2, 0, -2, 0);
-
+    //UIEdgeInsets insets = {top, left, bottom, right};
+//    item.titlePositionAdjustment = UIOffsetMake(0, -3);
+    item.imageInsets = UIEdgeInsetsMake(6.5, 0,-6.5, 0);
     return item;
 }
 

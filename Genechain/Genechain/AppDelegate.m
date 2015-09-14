@@ -26,11 +26,6 @@
     [con startNotifier];
     [self setWIndowRootVc];
     
-    MGHomeVC *hvc = [[MGHomeVC alloc] init];
-    T2TNavController *hNav = getNavWithVc(hvc);
-    self.window.rootViewController = hNav;
-    
-    
     if (![kUserDefaults objectForKey:kMGMsgSwitchKey]) {
         [kUserDefaults setObject:[NSNumber numberWithBool:YES] forKey:kMGMsgSwitchKey];
     }
@@ -42,30 +37,32 @@
 }
 
 - (void)setWIndowRootVc{
-    
-    if ([kUserDefaults objectForKey:MGGestureFinalSaveKey]) {
-        //表示手势密码存在
-        GestureViewController *gvc = [[GestureViewController alloc] init];
-        gvc.type = GestureViewControllerTypeLogin;
-        [gvc setHandleSuccessBlock:^{
-            MGHomeVC *hvc = [[MGHomeVC alloc] init];
-            T2TNavController *hNav = getNavWithVc(hvc);
-            self.window.rootViewController = hNav;
-            [MGUserManger loginWithUserName:[[MGUserModel shareMGUserModel] getUserName] psdStr:[[MGUserModel shareMGUserModel] getPwd] handleBlock:nil];
-        }];
-        self.window.rootViewController = gvc;
-            
-    }else{
-    
-        MGLoginVC *lvc = [MGLoginVC getLoginVC];
-        self.window.rootViewController = lvc;
-        
-        [lvc setLoginSuccessBlock:^{
-            MGHomeVC *hvc = [[MGHomeVC alloc] init];
-            T2TNavController *hNav = getNavWithVc(hvc);
-            self.window.rootViewController = hNav;
-        }];
-    }
+    MGHomeVC *hvc = [[MGHomeVC alloc] init];
+    T2TNavController *hNav = getNavWithVc(hvc);
+    self.window.rootViewController = hNav;
+//    if ([kUserDefaults objectForKey:MGGestureFinalSaveKey]) {
+//        //表示手势密码存在
+//        GestureViewController *gvc = [[GestureViewController alloc] init];
+//        gvc.type = GestureViewControllerTypeLogin;
+//        [gvc setHandleSuccessBlock:^{
+//            MGHomeVC *hvc = [[MGHomeVC alloc] init];
+//            T2TNavController *hNav = getNavWithVc(hvc);
+//            self.window.rootViewController = hNav;
+//            [MGUserManger loginWithUserName:[[MGUserModel shareMGUserModel] getUserName] psdStr:[[MGUserModel shareMGUserModel] getPwd] handleBlock:nil];
+//        }];
+//        self.window.rootViewController = gvc;
+//            
+//    }else{
+//    
+//        MGLoginVC *lvc = [MGLoginVC getLoginVC];
+//        self.window.rootViewController = lvc;
+//        
+//        [lvc setLoginSuccessBlock:^{
+//            MGHomeVC *hvc = [[MGHomeVC alloc] init];
+//            T2TNavController *hNav = getNavWithVc(hvc);
+//            self.window.rootViewController = hNav;
+//        }];
+//    }
     
 }
 
