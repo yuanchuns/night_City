@@ -11,9 +11,6 @@
 		4D3A508F1B67040C00F0A23F /* MGChangePsdVc.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D3A508D1B67040C00F0A23F /* MGChangePsdVc.xib */; };
 		4D3A50921B671CAD00F0A23F /* UITableViewCell+Add.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D3A50911B671CAD00F0A23F /* UITableViewCell+Add.m */; };
 		4D3A50951B671E9200F0A23F /* SSTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D3A50941B671E9200F0A23F /* SSTabBarController.m */; };
-		4D3A50981B671FFC00F0A23F /* MGMineScheduleVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D3A50971B671FFC00F0A23F /* MGMineScheduleVc.m */; };
-		4D3A509B1B67203900F0A23F /* MGMangerScheduleVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D3A509A1B67203900F0A23F /* MGMangerScheduleVc.m */; };
-		4D3A509E1B67205C00F0A23F /* MGMineTaskVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D3A509D1B67205C00F0A23F /* MGMineTaskVc.m */; };
 		4D3A50A91B67653C00F0A23F /* MGUserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D3A50A81B67653C00F0A23F /* MGUserModel.m */; };
 		4D3A50AC1B6765E300F0A23F /* MGUserManger.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D3A50AB1B6765E300F0A23F /* MGUserManger.m */; };
 		4D755C0E1B660BB900D6290F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D755C0D1B660BB900D6290F /* Foundation.framework */; };
@@ -48,26 +45,8 @@
 		4DEE688D1B6863600096FC8E /* MGWebVc.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4DEE688B1B6863600096FC8E /* MGWebVc.xib */; };
 		4DEFCDDD1B7D8D8D00B57F07 /* EAskSelectTypeBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DEFCDDB1B7D8D8D00B57F07 /* EAskSelectTypeBar.m */; };
 		4DEFCDDE1B7D8D8D00B57F07 /* EAskSelectTypeBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4DEFCDDC1B7D8D8D00B57F07 /* EAskSelectTypeBar.xib */; };
-		A33643971B904D62001EAA03 /* workSpaceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A33643951B904D62001EAA03 /* workSpaceViewController.m */; };
-		A33643981B904D62001EAA03 /* workSpaceViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A33643961B904D62001EAA03 /* workSpaceViewController.xib */; };
-		A336439C1B905093001EAA03 /* WorkTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A336439A1B905093001EAA03 /* WorkTableViewCell.m */; };
-		A336439D1B905093001EAA03 /* WorkTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A336439B1B905093001EAA03 /* WorkTableViewCell.xib */; };
 		A33643A61B905C3C001EAA03 /* UIView+WY.m in Sources */ = {isa = PBXBuildFile; fileRef = A33643A51B905C3B001EAA03 /* UIView+WY.m */; };
-		A3381E961B9FDC07007EC39F /* taskcell.m in Sources */ = {isa = PBXBuildFile; fileRef = A3381E941B9FDC07007EC39F /* taskcell.m */; };
-		A3381E971B9FDC07007EC39F /* taskcell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A3381E951B9FDC07007EC39F /* taskcell.xib */; };
-		A356ACD01B9085A30097D5A6 /* WorkSecondTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A356ACCE1B9085A30097D5A6 /* WorkSecondTableViewCell.m */; };
-		A356ACD11B9085A30097D5A6 /* WorkSecondTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A356ACCF1B9085A30097D5A6 /* WorkSecondTableViewCell.xib */; };
-		A356ACDB1B9099B70097D5A6 /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A356ACD91B9099B70097D5A6 /* SearchViewController.m */; };
-		A356ACDC1B9099B70097D5A6 /* SearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A356ACDA1B9099B70097D5A6 /* SearchViewController.xib */; };
-		A356ACE01B909E060097D5A6 /* SearchListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A356ACDE1B909E060097D5A6 /* SearchListVC.m */; };
-		A356ACE11B909E060097D5A6 /* SearchListVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = A356ACDF1B909E060097D5A6 /* SearchListVC.xib */; };
-		A35FE71E1B953D9500DEEF69 /* ListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A35FE71C1B953D9500DEEF69 /* ListVC.m */; };
-		A35FE71F1B953D9500DEEF69 /* ListVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = A35FE71D1B953D9500DEEF69 /* ListVC.xib */; };
 		A37F61741B94439500D31904 /* workMode.m in Sources */ = {isa = PBXBuildFile; fileRef = A37F61731B94439500D31904 /* workMode.m */; };
-		A382B4A71B96921E0085A701 /* costViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A382B4A61B96921E0085A701 /* costViewController.m */; };
-		A382B4AB1B96DB590085A701 /* taskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A382B4A91B96DB590085A701 /* taskViewController.m */; };
-		A382B4AC1B96DB590085A701 /* taskViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A382B4AA1B96DB590085A701 /* taskViewController.xib */; };
-		A3AB897A1B994F83004937A1 /* YCButton.m in Sources */ = {isa = PBXBuildFile; fileRef = A3AB89791B994F83004937A1 /* YCButton.m */; };
 		A3AB898C1B995CCE004937A1 /* MJRefresh.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A3AB897C1B995CCE004937A1 /* MJRefresh.bundle */; };
 		A3AB898D1B995CCE004937A1 /* MJRefreshBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = A3AB897F1B995CCE004937A1 /* MJRefreshBaseView.m */; };
 		A3AB898E1B995CCE004937A1 /* MJRefreshConst.m in Sources */ = {isa = PBXBuildFile; fileRef = A3AB89811B995CCE004937A1 /* MJRefreshConst.m */; };
@@ -76,22 +55,13 @@
 		A3AB89911B995CCE004937A1 /* UIScrollView+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = A3AB89871B995CCE004937A1 /* UIScrollView+MJExtension.m */; };
 		A3AB89921B995CCE004937A1 /* UIScrollView+MJRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = A3AB89891B995CCE004937A1 /* UIScrollView+MJRefresh.m */; };
 		A3AB89931B995CCE004937A1 /* UIView+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = A3AB898B1B995CCE004937A1 /* UIView+MJExtension.m */; };
-		A3B48D091B98134B001ED240 /* BoolViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3B48D071B98134B001ED240 /* BoolViewController.m */; };
-		A3B48D0A1B98134B001ED240 /* BoolViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A3B48D081B98134B001ED240 /* BoolViewController.xib */; };
 		A3EE25EE1B8D93DD00D3F476 /* GTMBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = A3EE25EC1B8D93DD00D3F476 /* GTMBase64.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		BC171EA51B76519E00A81E51 /* MGSchduleDetailVc+Other.m in Sources */ = {isa = PBXBuildFile; fileRef = BC171EA41B76519E00A81E51 /* MGSchduleDetailVc+Other.m */; };
-		BC2019EC1B7B71E10001FDD5 /* MGSelectedAreaVc.m in Sources */ = {isa = PBXBuildFile; fileRef = BC2019EB1B7B71E10001FDD5 /* MGSelectedAreaVc.m */; };
-		BC2019EF1B7B7D380001FDD5 /* MGSelectProjectVc.m in Sources */ = {isa = PBXBuildFile; fileRef = BC2019EE1B7B7D380001FDD5 /* MGSelectProjectVc.m */; };
 		BC2019F31B7B7E130001FDD5 /* MGProjectCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BC2019F11B7B7E130001FDD5 /* MGProjectCell.m */; };
 		BC2019F41B7B7E130001FDD5 /* MGProjectCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC2019F21B7B7E130001FDD5 /* MGProjectCell.xib */; };
 		BC2019F81B7B908C0001FDD5 /* MGClientCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BC2019F61B7B908C0001FDD5 /* MGClientCell.m */; };
 		BC2019F91B7B908C0001FDD5 /* MGClientCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC2019F71B7B908C0001FDD5 /* MGClientCell.xib */; };
-		BC2019FC1B7B93290001FDD5 /* MGSelectedClientVc.m in Sources */ = {isa = PBXBuildFile; fileRef = BC2019FB1B7B93290001FDD5 /* MGSelectedClientVc.m */; };
-		BC26782B1B8B3E930065F3AE /* T2TActionTaskVc.m in Sources */ = {isa = PBXBuildFile; fileRef = BC2678291B8B3E930065F3AE /* T2TActionTaskVc.m */; };
-		BC26782C1B8B3E930065F3AE /* T2TActionTaskVc.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC26782A1B8B3E930065F3AE /* T2TActionTaskVc.xib */; };
 		BC2678311B8B493A0065F3AE /* RadioBox.m in Sources */ = {isa = PBXBuildFile; fileRef = BC26782E1B8B493A0065F3AE /* RadioBox.m */; };
 		BC2678321B8B493A0065F3AE /* RadioGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = BC2678301B8B493A0065F3AE /* RadioGroup.m */; };
-		BC270EED1B78C46600F63F81 /* MGSelectedDeptVc.m in Sources */ = {isa = PBXBuildFile; fileRef = BCF961DF1B773D2700E9C737 /* MGSelectedDeptVc.m */; };
 		BC270F031B78C4BD00F63F81 /* RATreeNode.m in Sources */ = {isa = PBXBuildFile; fileRef = BC270EF01B78C4BD00F63F81 /* RATreeNode.m */; };
 		BC270F041B78C4BD00F63F81 /* RATreeNodeCollectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC270EF21B78C4BD00F63F81 /* RATreeNodeCollectionController.m */; };
 		BC270F051B78C4BD00F63F81 /* RATreeNodeInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = BC270EF41B78C4BD00F63F81 /* RATreeNodeInfo.m */; };
@@ -104,23 +74,17 @@
 		BC270F0C1B78C4BD00F63F81 /* RATreeView+UIScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = BC270F021B78C4BD00F63F81 /* RATreeView+UIScrollView.m */; };
 		BC270F101B78D41200F63F81 /* MGDeptCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BC270F0E1B78D41200F63F81 /* MGDeptCell.m */; };
 		BC270F111B78D41200F63F81 /* MGDeptCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC270F0F1B78D41200F63F81 /* MGDeptCell.xib */; };
-		BC2C92B01B82090800872DFF /* MGAddTaskerVc.m in Sources */ = {isa = PBXBuildFile; fileRef = BC2C92AF1B82090800872DFF /* MGAddTaskerVc.m */; };
 		BC349A1F1B6A4C3B00F074ED /* MGToolWebVc.m in Sources */ = {isa = PBXBuildFile; fileRef = BC349A1E1B6A4C3B00F074ED /* MGToolWebVc.m */; };
 		BC349A261B6A617500F074ED /* MGMangerSchduleModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BC349A251B6A617500F074ED /* MGMangerSchduleModel.m */; };
 		BC36D6521B7CC4D900A6A017 /* MGActivityCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BC36D6501B7CC4D900A6A017 /* MGActivityCell.m */; };
 		BC36D6531B7CC4D900A6A017 /* MGActivityCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC36D6511B7CC4D900A6A017 /* MGActivityCell.xib */; };
-		BC36D6571B7CCC0100A6A017 /* MGSelectedActivityVc.m in Sources */ = {isa = PBXBuildFile; fileRef = BC36D6551B7CCC0100A6A017 /* MGSelectedActivityVc.m */; };
-		BC36D65B1B7CE0F400A6A017 /* MGSelectedTaskerVc.m in Sources */ = {isa = PBXBuildFile; fileRef = BC36D65A1B7CE0F400A6A017 /* MGSelectedTaskerVc.m */; };
 		BC36D65F1B7CE23900A6A017 /* MGEmployeeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BC36D65D1B7CE23900A6A017 /* MGEmployeeCell.m */; };
 		BC36D6601B7CE23900A6A017 /* MGEmployeeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC36D65E1B7CE23900A6A017 /* MGEmployeeCell.xib */; };
 		BC4DA18C1B70DDB70079B3BE /* MGMangerSchduleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BC4DA18A1B70DDB70079B3BE /* MGMangerSchduleCell.m */; };
 		BC4DA18D1B70DDB70079B3BE /* MGMangerSchduleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC4DA18B1B70DDB70079B3BE /* MGMangerSchduleCell.xib */; };
 		BC51F0DC1B8CA33A00DEB259 /* scree.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC51F0DB1B8CA33A00DEB259 /* scree.xib */; };
 		BC59EC1F1B73A7850024C6D5 /* MGSchudleDetailModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BC59EC1E1B73A7850024C6D5 /* MGSchudleDetailModel.m */; };
-		BC59EC221B73AA310024C6D5 /* MGSchduleDetailVc.m in Sources */ = {isa = PBXBuildFile; fileRef = BC59EC211B73AA310024C6D5 /* MGSchduleDetailVc.m */; };
-		BC64BC9A1B7A218F0030C8AF /* MGAddNewSchduleVc.m in Sources */ = {isa = PBXBuildFile; fileRef = BC64BC991B7A218F0030C8AF /* MGAddNewSchduleVc.m */; };
 		BC64BC9F1B7A47280030C8AF /* MGAreaModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BC64BC9E1B7A47280030C8AF /* MGAreaModel.m */; };
-		BC6B31701B7EE88000387015 /* MGSelectedCompanyVc.m in Sources */ = {isa = PBXBuildFile; fileRef = BC6B316F1B7EE88000387015 /* MGSelectedCompanyVc.m */; };
 		BC74D70A1B72355600C189F0 /* MGMineSchduleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC74D7091B72355600C189F0 /* MGMineSchduleCell.xib */; };
 		BC74D70F1B7253EE00C189F0 /* MGCacheConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = BC74D70E1B7253EE00C189F0 /* MGCacheConfiguration.m */; };
 		BC820B6E1B737FC9007AB050 /* MGProjectTypeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BC820B6D1B737FC9007AB050 /* MGProjectTypeModel.m */; };
@@ -183,10 +147,8 @@
 		BCE5AE471B8DEC670027AC28 /* MGCalendarCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BCE5AE451B8DEC670027AC28 /* MGCalendarCell.m */; };
 		BCE5AE481B8DEC670027AC28 /* MGCalendarCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BCE5AE461B8DEC670027AC28 /* MGCalendarCell.xib */; };
 		BCE5AE4B1B8E067F0027AC28 /* MGAddMineSchduleNoti.m in Sources */ = {isa = PBXBuildFile; fileRef = BCE5AE4A1B8E067F0027AC28 /* MGAddMineSchduleNoti.m */; };
-		BCF961C71B76F6F800E9C737 /* MGSchduleQueryVc.m in Sources */ = {isa = PBXBuildFile; fileRef = BCF961C61B76F6F800E9C737 /* MGSchduleQueryVc.m */; };
 		BCF961CB1B76FF2000E9C737 /* MGTextFiledCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BCF961C91B76FF2000E9C737 /* MGTextFiledCell.m */; };
 		BCF961CC1B76FF2000E9C737 /* MGTextFiledCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BCF961CA1B76FF2000E9C737 /* MGTextFiledCell.xib */; };
-		BCF961DD1B77202800E9C737 /* MGSelectedSchduleTypeVc.m in Sources */ = {isa = PBXBuildFile; fileRef = BCF961DC1B77202800E9C737 /* MGSelectedSchduleTypeVc.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -207,12 +169,6 @@
 		4D3A50911B671CAD00F0A23F /* UITableViewCell+Add.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+Add.m"; sourceTree = "<group>"; };
 		4D3A50931B671E9200F0A23F /* SSTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSTabBarController.h; sourceTree = "<group>"; };
 		4D3A50941B671E9200F0A23F /* SSTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSTabBarController.m; sourceTree = "<group>"; };
-		4D3A50961B671FFC00F0A23F /* MGMineScheduleVc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGMineScheduleVc.h; sourceTree = "<group>"; };
-		4D3A50971B671FFC00F0A23F /* MGMineScheduleVc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGMineScheduleVc.m; sourceTree = "<group>"; };
-		4D3A50991B67203900F0A23F /* MGMangerScheduleVc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGMangerScheduleVc.h; sourceTree = "<group>"; };
-		4D3A509A1B67203900F0A23F /* MGMangerScheduleVc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGMangerScheduleVc.m; sourceTree = "<group>"; };
-		4D3A509C1B67205C00F0A23F /* MGMineTaskVc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGMineTaskVc.h; sourceTree = "<group>"; };
-		4D3A509D1B67205C00F0A23F /* MGMineTaskVc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGMineTaskVc.m; sourceTree = "<group>"; };
 		4D3A50A71B67653C00F0A23F /* MGUserModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGUserModel.h; sourceTree = "<group>"; };
 		4D3A50A81B67653C00F0A23F /* MGUserModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGUserModel.m; sourceTree = "<group>"; };
 		4D3A50AA1B6765E300F0A23F /* MGUserManger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGUserManger.h; sourceTree = "<group>"; };
@@ -266,38 +222,10 @@
 		4DEFCDDA1B7D8D8D00B57F07 /* EAskSelectTypeBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EAskSelectTypeBar.h; sourceTree = "<group>"; };
 		4DEFCDDB1B7D8D8D00B57F07 /* EAskSelectTypeBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EAskSelectTypeBar.m; sourceTree = "<group>"; };
 		4DEFCDDC1B7D8D8D00B57F07 /* EAskSelectTypeBar.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EAskSelectTypeBar.xib; sourceTree = "<group>"; };
-		A33643941B904D62001EAA03 /* workSpaceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = workSpaceViewController.h; sourceTree = "<group>"; };
-		A33643951B904D62001EAA03 /* workSpaceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = workSpaceViewController.m; sourceTree = "<group>"; };
-		A33643961B904D62001EAA03 /* workSpaceViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = workSpaceViewController.xib; sourceTree = "<group>"; };
-		A33643991B905093001EAA03 /* WorkTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WorkTableViewCell.h; sourceTree = "<group>"; };
-		A336439A1B905093001EAA03 /* WorkTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WorkTableViewCell.m; sourceTree = "<group>"; };
-		A336439B1B905093001EAA03 /* WorkTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WorkTableViewCell.xib; sourceTree = "<group>"; };
 		A33643A41B905C3B001EAA03 /* UIView+WY.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+WY.h"; sourceTree = "<group>"; };
 		A33643A51B905C3B001EAA03 /* UIView+WY.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+WY.m"; sourceTree = "<group>"; };
-		A3381E931B9FDC07007EC39F /* taskcell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = taskcell.h; sourceTree = "<group>"; };
-		A3381E941B9FDC07007EC39F /* taskcell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = taskcell.m; sourceTree = "<group>"; };
-		A3381E951B9FDC07007EC39F /* taskcell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = taskcell.xib; sourceTree = "<group>"; };
-		A356ACCD1B9085A30097D5A6 /* WorkSecondTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WorkSecondTableViewCell.h; sourceTree = "<group>"; };
-		A356ACCE1B9085A30097D5A6 /* WorkSecondTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WorkSecondTableViewCell.m; sourceTree = "<group>"; };
-		A356ACCF1B9085A30097D5A6 /* WorkSecondTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WorkSecondTableViewCell.xib; sourceTree = "<group>"; };
-		A356ACD81B9099B70097D5A6 /* SearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchViewController.h; sourceTree = "<group>"; };
-		A356ACD91B9099B70097D5A6 /* SearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchViewController.m; sourceTree = "<group>"; };
-		A356ACDA1B9099B70097D5A6 /* SearchViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchViewController.xib; sourceTree = "<group>"; };
-		A356ACDD1B909E060097D5A6 /* SearchListVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchListVC.h; sourceTree = "<group>"; };
-		A356ACDE1B909E060097D5A6 /* SearchListVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchListVC.m; sourceTree = "<group>"; };
-		A356ACDF1B909E060097D5A6 /* SearchListVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchListVC.xib; sourceTree = "<group>"; };
-		A35FE71B1B953D9500DEEF69 /* ListVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListVC.h; sourceTree = "<group>"; };
-		A35FE71C1B953D9500DEEF69 /* ListVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListVC.m; sourceTree = "<group>"; };
-		A35FE71D1B953D9500DEEF69 /* ListVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ListVC.xib; sourceTree = "<group>"; };
 		A37F61721B94439500D31904 /* workMode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = workMode.h; sourceTree = "<group>"; };
 		A37F61731B94439500D31904 /* workMode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = workMode.m; sourceTree = "<group>"; };
-		A382B4A51B96921E0085A701 /* costViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = costViewController.h; sourceTree = "<group>"; };
-		A382B4A61B96921E0085A701 /* costViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = costViewController.m; sourceTree = "<group>"; };
-		A382B4A81B96DB590085A701 /* taskViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = taskViewController.h; sourceTree = "<group>"; };
-		A382B4A91B96DB590085A701 /* taskViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = taskViewController.m; sourceTree = "<group>"; };
-		A382B4AA1B96DB590085A701 /* taskViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = taskViewController.xib; sourceTree = "<group>"; };
-		A3AB89781B994F83004937A1 /* YCButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCButton.h; sourceTree = "<group>"; };
-		A3AB89791B994F83004937A1 /* YCButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCButton.m; sourceTree = "<group>"; };
 		A3AB897C1B995CCE004937A1 /* MJRefresh.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MJRefresh.bundle; sourceTree = "<group>"; };
 		A3AB897D1B995CCE004937A1 /* MJRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefresh.h; sourceTree = "<group>"; };
 		A3AB897E1B995CCE004937A1 /* MJRefreshBaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshBaseView.h; sourceTree = "<group>"; };
@@ -314,29 +242,15 @@
 		A3AB89891B995CCE004937A1 /* UIScrollView+MJRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+MJRefresh.m"; sourceTree = "<group>"; };
 		A3AB898A1B995CCE004937A1 /* UIView+MJExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+MJExtension.h"; sourceTree = "<group>"; };
 		A3AB898B1B995CCE004937A1 /* UIView+MJExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+MJExtension.m"; sourceTree = "<group>"; };
-		A3B48D061B98134B001ED240 /* BoolViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BoolViewController.h; sourceTree = "<group>"; };
-		A3B48D071B98134B001ED240 /* BoolViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BoolViewController.m; sourceTree = "<group>"; };
-		A3B48D081B98134B001ED240 /* BoolViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BoolViewController.xib; sourceTree = "<group>"; };
 		A3EE25EB1B8D93DD00D3F476 /* GTMBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMBase64.h; sourceTree = "<group>"; };
 		A3EE25EC1B8D93DD00D3F476 /* GTMBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMBase64.m; sourceTree = "<group>"; };
 		A3EE25ED1B8D93DD00D3F476 /* GTMDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMDefines.h; sourceTree = "<group>"; };
-		BC171EA31B76519E00A81E51 /* MGSchduleDetailVc+Other.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MGSchduleDetailVc+Other.h"; sourceTree = "<group>"; };
-		BC171EA41B76519E00A81E51 /* MGSchduleDetailVc+Other.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MGSchduleDetailVc+Other.m"; sourceTree = "<group>"; };
-		BC2019EA1B7B71E10001FDD5 /* MGSelectedAreaVc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGSelectedAreaVc.h; sourceTree = "<group>"; };
-		BC2019EB1B7B71E10001FDD5 /* MGSelectedAreaVc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGSelectedAreaVc.m; sourceTree = "<group>"; };
-		BC2019ED1B7B7D380001FDD5 /* MGSelectProjectVc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGSelectProjectVc.h; sourceTree = "<group>"; };
-		BC2019EE1B7B7D380001FDD5 /* MGSelectProjectVc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGSelectProjectVc.m; sourceTree = "<group>"; };
 		BC2019F01B7B7E130001FDD5 /* MGProjectCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGProjectCell.h; sourceTree = "<group>"; };
 		BC2019F11B7B7E130001FDD5 /* MGProjectCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGProjectCell.m; sourceTree = "<group>"; };
 		BC2019F21B7B7E130001FDD5 /* MGProjectCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MGProjectCell.xib; sourceTree = "<group>"; };
 		BC2019F51B7B908C0001FDD5 /* MGClientCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGClientCell.h; sourceTree = "<group>"; };
 		BC2019F61B7B908C0001FDD5 /* MGClientCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGClientCell.m; sourceTree = "<group>"; };
 		BC2019F71B7B908C0001FDD5 /* MGClientCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MGClientCell.xib; sourceTree = "<group>"; };
-		BC2019FA1B7B93290001FDD5 /* MGSelectedClientVc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGSelectedClientVc.h; sourceTree = "<group>"; };
-		BC2019FB1B7B93290001FDD5 /* MGSelectedClientVc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGSelectedClientVc.m; sourceTree = "<group>"; };
-		BC2678281B8B3E930065F3AE /* T2TActionTaskVc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = T2TActionTaskVc.h; sourceTree = "<group>"; };
-		BC2678291B8B3E930065F3AE /* T2TActionTaskVc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = T2TActionTaskVc.m; sourceTree = "<group>"; };
-		BC26782A1B8B3E930065F3AE /* T2TActionTaskVc.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = T2TActionTaskVc.xib; sourceTree = "<group>"; };
 		BC26782D1B8B493A0065F3AE /* RadioBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RadioBox.h; sourceTree = "<group>"; };
 		BC26782E1B8B493A0065F3AE /* RadioBox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RadioBox.m; sourceTree = "<group>"; };
 		BC26782F1B8B493A0065F3AE /* RadioGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RadioGroup.h; sourceTree = "<group>"; };
@@ -364,8 +278,6 @@
 		BC270F0D1B78D41200F63F81 /* MGDeptCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGDeptCell.h; sourceTree = "<group>"; };
 		BC270F0E1B78D41200F63F81 /* MGDeptCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGDeptCell.m; sourceTree = "<group>"; };
 		BC270F0F1B78D41200F63F81 /* MGDeptCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MGDeptCell.xib; sourceTree = "<group>"; };
-		BC2C92AE1B82090800872DFF /* MGAddTaskerVc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGAddTaskerVc.h; sourceTree = "<group>"; };
-		BC2C92AF1B82090800872DFF /* MGAddTaskerVc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGAddTaskerVc.m; sourceTree = "<group>"; };
 		BC349A1D1B6A4C3B00F074ED /* MGToolWebVc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGToolWebVc.h; sourceTree = "<group>"; };
 		BC349A1E1B6A4C3B00F074ED /* MGToolWebVc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGToolWebVc.m; sourceTree = "<group>"; };
 		BC349A241B6A617500F074ED /* MGMangerSchduleModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGMangerSchduleModel.h; sourceTree = "<group>"; };
@@ -373,10 +285,6 @@
 		BC36D64F1B7CC4D900A6A017 /* MGActivityCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGActivityCell.h; sourceTree = "<group>"; };
 		BC36D6501B7CC4D900A6A017 /* MGActivityCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGActivityCell.m; sourceTree = "<group>"; };
 		BC36D6511B7CC4D900A6A017 /* MGActivityCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MGActivityCell.xib; sourceTree = "<group>"; };
-		BC36D6541B7CCC0100A6A017 /* MGSelectedActivityVc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGSelectedActivityVc.h; sourceTree = "<group>"; };
-		BC36D6551B7CCC0100A6A017 /* MGSelectedActivityVc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGSelectedActivityVc.m; sourceTree = "<group>"; };
-		BC36D6591B7CE0F400A6A017 /* MGSelectedTaskerVc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGSelectedTaskerVc.h; sourceTree = "<group>"; };
-		BC36D65A1B7CE0F400A6A017 /* MGSelectedTaskerVc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGSelectedTaskerVc.m; sourceTree = "<group>"; };
 		BC36D65C1B7CE23900A6A017 /* MGEmployeeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGEmployeeCell.h; sourceTree = "<group>"; };
 		BC36D65D1B7CE23900A6A017 /* MGEmployeeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGEmployeeCell.m; sourceTree = "<group>"; };
 		BC36D65E1B7CE23900A6A017 /* MGEmployeeCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MGEmployeeCell.xib; sourceTree = "<group>"; };
@@ -386,14 +294,8 @@
 		BC51F0DB1B8CA33A00DEB259 /* scree.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = scree.xib; sourceTree = "<group>"; };
 		BC59EC1D1B73A7840024C6D5 /* MGSchudleDetailModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGSchudleDetailModel.h; sourceTree = "<group>"; };
 		BC59EC1E1B73A7850024C6D5 /* MGSchudleDetailModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGSchudleDetailModel.m; sourceTree = "<group>"; };
-		BC59EC201B73AA310024C6D5 /* MGSchduleDetailVc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGSchduleDetailVc.h; sourceTree = "<group>"; };
-		BC59EC211B73AA310024C6D5 /* MGSchduleDetailVc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGSchduleDetailVc.m; sourceTree = "<group>"; };
-		BC64BC981B7A218F0030C8AF /* MGAddNewSchduleVc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGAddNewSchduleVc.h; sourceTree = "<group>"; };
-		BC64BC991B7A218F0030C8AF /* MGAddNewSchduleVc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGAddNewSchduleVc.m; sourceTree = "<group>"; };
 		BC64BC9D1B7A47280030C8AF /* MGAreaModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGAreaModel.h; sourceTree = "<group>"; };
 		BC64BC9E1B7A47280030C8AF /* MGAreaModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGAreaModel.m; sourceTree = "<group>"; };
-		BC6B316E1B7EE88000387015 /* MGSelectedCompanyVc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGSelectedCompanyVc.h; sourceTree = "<group>"; };
-		BC6B316F1B7EE88000387015 /* MGSelectedCompanyVc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGSelectedCompanyVc.m; sourceTree = "<group>"; };
 		BC74D7091B72355600C189F0 /* MGMineSchduleCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MGMineSchduleCell.xib; sourceTree = "<group>"; };
 		BC74D70D1B7253EE00C189F0 /* MGCacheConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGCacheConfiguration.h; sourceTree = "<group>"; };
 		BC74D70E1B7253EE00C189F0 /* MGCacheConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGCacheConfiguration.m; sourceTree = "<group>"; };
@@ -506,15 +408,9 @@
 		BCE5AE461B8DEC670027AC28 /* MGCalendarCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MGCalendarCell.xib; sourceTree = "<group>"; };
 		BCE5AE491B8E067F0027AC28 /* MGAddMineSchduleNoti.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGAddMineSchduleNoti.h; sourceTree = "<group>"; };
 		BCE5AE4A1B8E067F0027AC28 /* MGAddMineSchduleNoti.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGAddMineSchduleNoti.m; sourceTree = "<group>"; };
-		BCF961C51B76F6F800E9C737 /* MGSchduleQueryVc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGSchduleQueryVc.h; sourceTree = "<group>"; };
-		BCF961C61B76F6F800E9C737 /* MGSchduleQueryVc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGSchduleQueryVc.m; sourceTree = "<group>"; };
 		BCF961C81B76FF2000E9C737 /* MGTextFiledCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGTextFiledCell.h; sourceTree = "<group>"; };
 		BCF961C91B76FF2000E9C737 /* MGTextFiledCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGTextFiledCell.m; sourceTree = "<group>"; };
 		BCF961CA1B76FF2000E9C737 /* MGTextFiledCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MGTextFiledCell.xib; sourceTree = "<group>"; };
-		BCF961DB1B77202800E9C737 /* MGSelectedSchduleTypeVc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGSelectedSchduleTypeVc.h; sourceTree = "<group>"; };
-		BCF961DC1B77202800E9C737 /* MGSelectedSchduleTypeVc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGSelectedSchduleTypeVc.m; sourceTree = "<group>"; };
-		BCF961DE1B773D2700E9C737 /* MGSelectedDeptVc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGSelectedDeptVc.h; sourceTree = "<group>"; };
-		BCF961DF1B773D2700E9C737 /* MGSelectedDeptVc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGSelectedDeptVc.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -680,7 +576,6 @@
 				4DC2F2EE1B660D2200099A35 /* Tool */,
 				4DC2F2ED1B660D0B00099A35 /* Schedule */,
 				4DC2F2EC1B660CF200099A35 /* Home */,
-				A3AE5D0E1B9BE4BD00B05F9C /* workSpace */,
 			);
 			name = Module;
 			sourceTree = "<group>";
@@ -709,41 +604,6 @@
 				BCDA73761B6F8906000E77E5 /* help */,
 				4DC2F3131B66237900099A35 /* MGSecheduleHomeVC.h */,
 				4DC2F3141B66237900099A35 /* MGSecheduleHomeVC.m */,
-				4D3A50961B671FFC00F0A23F /* MGMineScheduleVc.h */,
-				4D3A50971B671FFC00F0A23F /* MGMineScheduleVc.m */,
-				4D3A50991B67203900F0A23F /* MGMangerScheduleVc.h */,
-				4D3A509A1B67203900F0A23F /* MGMangerScheduleVc.m */,
-				4D3A509C1B67205C00F0A23F /* MGMineTaskVc.h */,
-				4D3A509D1B67205C00F0A23F /* MGMineTaskVc.m */,
-				BC2678281B8B3E930065F3AE /* T2TActionTaskVc.h */,
-				BC2678291B8B3E930065F3AE /* T2TActionTaskVc.m */,
-				BC26782A1B8B3E930065F3AE /* T2TActionTaskVc.xib */,
-				BC59EC201B73AA310024C6D5 /* MGSchduleDetailVc.h */,
-				BC59EC211B73AA310024C6D5 /* MGSchduleDetailVc.m */,
-				BC171EA31B76519E00A81E51 /* MGSchduleDetailVc+Other.h */,
-				BC171EA41B76519E00A81E51 /* MGSchduleDetailVc+Other.m */,
-				BCF961C51B76F6F800E9C737 /* MGSchduleQueryVc.h */,
-				BCF961C61B76F6F800E9C737 /* MGSchduleQueryVc.m */,
-				BCF961DB1B77202800E9C737 /* MGSelectedSchduleTypeVc.h */,
-				BCF961DC1B77202800E9C737 /* MGSelectedSchduleTypeVc.m */,
-				BCF961DE1B773D2700E9C737 /* MGSelectedDeptVc.h */,
-				BCF961DF1B773D2700E9C737 /* MGSelectedDeptVc.m */,
-				BC64BC981B7A218F0030C8AF /* MGAddNewSchduleVc.h */,
-				BC64BC991B7A218F0030C8AF /* MGAddNewSchduleVc.m */,
-				BC2019EA1B7B71E10001FDD5 /* MGSelectedAreaVc.h */,
-				BC2019EB1B7B71E10001FDD5 /* MGSelectedAreaVc.m */,
-				BC2019ED1B7B7D380001FDD5 /* MGSelectProjectVc.h */,
-				BC2019EE1B7B7D380001FDD5 /* MGSelectProjectVc.m */,
-				BC2019FA1B7B93290001FDD5 /* MGSelectedClientVc.h */,
-				BC2019FB1B7B93290001FDD5 /* MGSelectedClientVc.m */,
-				BC36D6541B7CCC0100A6A017 /* MGSelectedActivityVc.h */,
-				BC36D6551B7CCC0100A6A017 /* MGSelectedActivityVc.m */,
-				BC36D6591B7CE0F400A6A017 /* MGSelectedTaskerVc.h */,
-				BC36D65A1B7CE0F400A6A017 /* MGSelectedTaskerVc.m */,
-				BC6B316E1B7EE88000387015 /* MGSelectedCompanyVc.h */,
-				BC6B316F1B7EE88000387015 /* MGSelectedCompanyVc.m */,
-				BC2C92AE1B82090800872DFF /* MGAddTaskerVc.h */,
-				BC2C92AF1B82090800872DFF /* MGAddTaskerVc.m */,
 				BCDA736F1B6F87F4000E77E5 /* view */,
 				BC349A231B6A5F8800F074ED /* model */,
 			);
@@ -815,24 +675,6 @@
 			name = Model;
 			sourceTree = "<group>";
 		};
-		A356ACD21B9087400097D5A6 /* my cell */ = {
-			isa = PBXGroup;
-			children = (
-				A33643991B905093001EAA03 /* WorkTableViewCell.h */,
-				A336439A1B905093001EAA03 /* WorkTableViewCell.m */,
-				A336439B1B905093001EAA03 /* WorkTableViewCell.xib */,
-				A356ACCD1B9085A30097D5A6 /* WorkSecondTableViewCell.h */,
-				A356ACCE1B9085A30097D5A6 /* WorkSecondTableViewCell.m */,
-				A356ACCF1B9085A30097D5A6 /* WorkSecondTableViewCell.xib */,
-				A3AB89781B994F83004937A1 /* YCButton.h */,
-				A3AB89791B994F83004937A1 /* YCButton.m */,
-				A3381E931B9FDC07007EC39F /* taskcell.h */,
-				A3381E941B9FDC07007EC39F /* taskcell.m */,
-				A3381E951B9FDC07007EC39F /* taskcell.xib */,
-			);
-			name = "my cell";
-			sourceTree = "<group>";
-		};
 		A3AB897B1B995CCE004937A1 /* MJRefresh */ = {
 			isa = PBXGroup;
 			children = (
@@ -854,34 +696,6 @@
 				A3AB898B1B995CCE004937A1 /* UIView+MJExtension.m */,
 			);
 			path = MJRefresh;
-			sourceTree = "<group>";
-		};
-		A3AE5D0E1B9BE4BD00B05F9C /* workSpace */ = {
-			isa = PBXGroup;
-			children = (
-				A33643941B904D62001EAA03 /* workSpaceViewController.h */,
-				A33643951B904D62001EAA03 /* workSpaceViewController.m */,
-				A33643961B904D62001EAA03 /* workSpaceViewController.xib */,
-				A356ACD81B9099B70097D5A6 /* SearchViewController.h */,
-				A356ACD91B9099B70097D5A6 /* SearchViewController.m */,
-				A356ACDA1B9099B70097D5A6 /* SearchViewController.xib */,
-				A382B4A51B96921E0085A701 /* costViewController.h */,
-				A382B4A61B96921E0085A701 /* costViewController.m */,
-				A382B4A81B96DB590085A701 /* taskViewController.h */,
-				A382B4A91B96DB590085A701 /* taskViewController.m */,
-				A382B4AA1B96DB590085A701 /* taskViewController.xib */,
-				A356ACDE1B909E060097D5A6 /* SearchListVC.m */,
-				A356ACDD1B909E060097D5A6 /* SearchListVC.h */,
-				A356ACDF1B909E060097D5A6 /* SearchListVC.xib */,
-				A35FE71B1B953D9500DEEF69 /* ListVC.h */,
-				A35FE71C1B953D9500DEEF69 /* ListVC.m */,
-				A35FE71D1B953D9500DEEF69 /* ListVC.xib */,
-				A3B48D061B98134B001ED240 /* BoolViewController.h */,
-				A3B48D071B98134B001ED240 /* BoolViewController.m */,
-				A3B48D081B98134B001ED240 /* BoolViewController.xib */,
-				A356ACD21B9087400097D5A6 /* my cell */,
-			);
-			name = workSpace;
 			sourceTree = "<group>";
 		};
 		BC2678331B8B495E0065F3AE /* radio */ = {
@@ -1237,7 +1051,6 @@
 				BCCDA0D51B690B10004A535D /* AES in Resources */,
 				BCC02BF01B860165003832C1 /* MGMsgDetailVc.xib in Resources */,
 				BCB762811B837D3600262EFA /* MGChangeHeadImaVc.xib in Resources */,
-				BC26782C1B8B3E930065F3AE /* T2TActionTaskVc.xib in Resources */,
 				4DC2F3041B66169400099A35 /* MGLoginVC.xib in Resources */,
 				BCB7628B1B83876F00262EFA /* MGAbooutVc.xib in Resources */,
 				BC4DA18D1B70DDB70079B3BE /* MGMangerSchduleCell.xib in Resources */,
@@ -1245,25 +1058,17 @@
 				4DEE688D1B6863600096FC8E /* MGWebVc.xib in Resources */,
 				4D3A508F1B67040C00F0A23F /* MGChangePsdVc.xib in Resources */,
 				BCB762861B8380A500262EFA /* MGImavHeadCell.xib in Resources */,
-				A336439D1B905093001EAA03 /* WorkTableViewCell.xib in Resources */,
-				A356ACDC1B9099B70097D5A6 /* SearchViewController.xib in Resources */,
 				4D755C201B660BB900D6290F /* Images.xcassets in Resources */,
 				BC36D6601B7CE23900A6A017 /* MGEmployeeCell.xib in Resources */,
-				A356ACE11B909E060097D5A6 /* SearchListVC.xib in Resources */,
 				BCC9545D1B6664A70064D852 /* EMineSeitchCell.xib in Resources */,
 				BC820B8B1B739212007AB050 /* MGOneBoxCell.xib in Resources */,
-				A35FE71F1B953D9500DEEF69 /* ListVC.xib in Resources */,
 				A3AB898C1B995CCE004937A1 /* MJRefresh.bundle in Resources */,
 				BC74D70A1B72355600C189F0 /* MGMineSchduleCell.xib in Resources */,
 				BC820B901B739E68007AB050 /* MGTwoBoxCell.xib in Resources */,
-				A33643981B904D62001EAA03 /* workSpaceViewController.xib in Resources */,
-				A3381E971B9FDC07007EC39F /* taskcell.xib in Resources */,
 				BCF961CC1B76FF2000E9C737 /* MGTextFiledCell.xib in Resources */,
 				BC2019F91B7B908C0001FDD5 /* MGClientCell.xib in Resources */,
 				4DEE68841B6855120096FC8E /* TBasicLibResource.bundle in Resources */,
-				A382B4AC1B96DB590085A701 /* taskViewController.xib in Resources */,
 				4DC2F3121B661D5F00099A35 /* MGHomeItemCell.xib in Resources */,
-				A3B48D0A1B98134B001ED240 /* BoolViewController.xib in Resources */,
 				BC51F0DC1B8CA33A00DEB259 /* scree.xib in Resources */,
 				BC270F111B78D41200F63F81 /* MGDeptCell.xib in Resources */,
 				BCC954631B6666280064D852 /* EMineOtherInfoCell.xib in Resources */,
@@ -1272,7 +1077,6 @@
 				BC820B981B73A390007AB050 /* MGTaskerCell.xib in Resources */,
 				BC36D6531B7CC4D900A6A017 /* MGActivityCell.xib in Resources */,
 				BC2019F41B7B7E130001FDD5 /* MGProjectCell.xib in Resources */,
-				A356ACD11B9085A30097D5A6 /* WorkSecondTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1291,20 +1095,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BC270EED1B78C46600F63F81 /* MGSelectedDeptVc.m in Sources */,
 				4DD9E1801B69AD6800F26779 /* PCCircleViewConst.m in Sources */,
 				BCD786421B84ABB7008013FC /* FMDatabasePool.m in Sources */,
 				BC59EC1F1B73A7850024C6D5 /* MGSchudleDetailModel.m in Sources */,
 				A3AB89911B995CCE004937A1 /* UIScrollView+MJExtension.m in Sources */,
 				BC820B7A1B738534007AB050 /* MGClientModel.m in Sources */,
-				A3AB897A1B994F83004937A1 /* YCButton.m in Sources */,
 				BC74D70F1B7253EE00C189F0 /* MGCacheConfiguration.m in Sources */,
 				BC9AC4B81B71050300AEC895 /* MGMineTaskCell.m in Sources */,
 				BC2019F31B7B7E130001FDD5 /* MGProjectCell.m in Sources */,
 				BC820B8F1B739E68007AB050 /* MGTwoBoxCell.m in Sources */,
 				A3AB898E1B995CCE004937A1 /* MJRefreshConst.m in Sources */,
 				4D3A50A91B67653C00F0A23F /* MGUserModel.m in Sources */,
-				BC171EA51B76519E00A81E51 /* MGSchduleDetailVc+Other.m in Sources */,
 				BC820B741B7380A2007AB050 /* MGDepartmentModel.m in Sources */,
 				BC64BC9F1B7A47280030C8AF /* MGAreaModel.m in Sources */,
 				BCC954661B6670DE0064D852 /* MGMsgListVc.m in Sources */,
@@ -1316,53 +1117,40 @@
 				4DEE68881B685CBF0096FC8E /* MGHomeImaModel.m in Sources */,
 				4DC2F3181B66239300099A35 /* MGToolHomeVC.m in Sources */,
 				BC270F0A1B78C4BD00F63F81 /* RATreeView+TableViewDataSource.m in Sources */,
-				BC6B31701B7EE88000387015 /* MGSelectedCompanyVc.m in Sources */,
 				BCC02BF31B8607F7003832C1 /* UIViewController+CWStatusBarNotification.m in Sources */,
 				BCCDA0CB1B68FAAA004A535D /* CALayer+Anim.m in Sources */,
 				BC270F031B78C4BD00F63F81 /* RATreeNode.m in Sources */,
 				BCDA737A1B6FA042000E77E5 /* MGSchdulePullVc.m in Sources */,
 				4DC2F3031B66169400099A35 /* MGLoginVC.m in Sources */,
-				BC2019EF1B7B7D380001FDD5 /* MGSelectProjectVc.m in Sources */,
 				A33643A61B905C3C001EAA03 /* UIView+WY.m in Sources */,
 				A3AB89921B995CCE004937A1 /* UIScrollView+MJRefresh.m in Sources */,
 				BCCDA0CD1B68FAAA004A535D /* PCLockLabel.m in Sources */,
-				BC2C92B01B82090800872DFF /* MGAddTaskerVc.m in Sources */,
 				BC820B801B738698007AB050 /* MGActivetyOfExhibition.m in Sources */,
 				BCCDA0D21B68FAC4004A535D /* GestureVerifyViewController.m in Sources */,
 				BCC02BEF1B860165003832C1 /* MGMsgDetailVc.m in Sources */,
 				BC270F0B1B78C4BD00F63F81 /* RATreeView+TableViewDelegate.m in Sources */,
 				BCE5AE471B8DEC670027AC28 /* MGCalendarCell.m in Sources */,
 				BCC9546C1B66711B0064D852 /* MGPsdSecurityVc.m in Sources */,
-				A382B4A71B96921E0085A701 /* costViewController.m in Sources */,
 				A37F61741B94439500D31904 /* workMode.m in Sources */,
-				A3B48D091B98134B001ED240 /* BoolViewController.m in Sources */,
 				BC9AC4B41B7101EF00AEC895 /* MGMineTaskModel.m in Sources */,
-				BC2019EC1B7B71E10001FDD5 /* MGSelectedAreaVc.m in Sources */,
 				4D755C1E1B660BB900D6290F /* AppDelegate.m in Sources */,
 				BCCDA0C91B68FAAA004A535D /* PCCircleView.m in Sources */,
-				A336439C1B905093001EAA03 /* WorkTableViewCell.m in Sources */,
 				BC270F091B78C4BD00F63F81 /* RATreeView+Private.m in Sources */,
 				4D3A50AC1B6765E300F0A23F /* MGUserManger.m in Sources */,
 				BC820B6E1B737FC9007AB050 /* MGProjectTypeModel.m in Sources */,
 				4DC2F31B1B6623B000099A35 /* MGTestHomeVC.m in Sources */,
 				4DC2F2F31B660E0B00099A35 /* MGHomeVC.m in Sources */,
-				4D3A50981B671FFC00F0A23F /* MGMineScheduleVc.m in Sources */,
 				4DECEE741B86C58900452EE3 /* EAPPUnit.m in Sources */,
 				BC820B771B7383EE007AB050 /* MGProjectModel.m in Sources */,
 				4DC2F3111B661D5F00099A35 /* MGHomeItemCell.m in Sources */,
 				4D3A50951B671E9200F0A23F /* SSTabBarController.m in Sources */,
-				BC64BC9A1B7A218F0030C8AF /* MGAddNewSchduleVc.m in Sources */,
-				A382B4AB1B96DB590085A701 /* taskViewController.m in Sources */,
-				4D3A509E1B67205C00F0A23F /* MGMineTaskVc.m in Sources */,
 				BCC9545C1B6664A70064D852 /* EMineSeitchCell.m in Sources */,
-				BCF961DD1B77202800E9C737 /* MGSelectedSchduleTypeVc.m in Sources */,
 				BCD786411B84ABB7008013FC /* FMDatabaseAdditions.m in Sources */,
 				BCCDA0CC1B68FAAA004A535D /* PCCircleInfoView.m in Sources */,
 				4DEFCDDD1B7D8D8D00B57F07 /* EAskSelectTypeBar.m in Sources */,
 				BCE5AE431B8DDC0A0027AC28 /* MGCalendarView.m in Sources */,
 				BCD786401B84ABB7008013FC /* FMDatabase.m in Sources */,
 				BCCDA0D31B68FAC4004A535D /* GestureViewController.m in Sources */,
-				4D3A509B1B67203900F0A23F /* MGMangerScheduleVc.m in Sources */,
 				BCE5AE4B1B8E067F0027AC28 /* MGAddMineSchduleNoti.m in Sources */,
 				BCD7862E1B84A9E7008013FC /* MGMsgModel.m in Sources */,
 				BC820B831B738B7F007AB050 /* MGSchduleDetailTaskerModel.m in Sources */,
@@ -1371,27 +1159,19 @@
 				BC270F051B78C4BD00F63F81 /* RATreeNodeInfo.m in Sources */,
 				A3AB898F1B995CCE004937A1 /* MJRefreshFooterView.m in Sources */,
 				4DBA0DE21B6869E4005D3D83 /* MGLodingView.m in Sources */,
-				A356ACD01B9085A30097D5A6 /* WorkSecondTableViewCell.m in Sources */,
 				BCC02BF61B862AE1003832C1 /* DES.m in Sources */,
 				BC820B7D1B738671007AB050 /* MGActivetyOfEnrollmentModel.m in Sources */,
 				BCB762851B8380A500262EFA /* MGImavHeadCell.m in Sources */,
 				BC349A1F1B6A4C3B00F074ED /* MGToolWebVc.m in Sources */,
-				A33643971B904D62001EAA03 /* workSpaceViewController.m in Sources */,
 				4D755C1A1B660BB900D6290F /* main.m in Sources */,
-				BC2019FC1B7B93290001FDD5 /* MGSelectedClientVc.m in Sources */,
 				BCD786441B84ABB7008013FC /* FMResultSet.m in Sources */,
-				BCF961C71B76F6F800E9C737 /* MGSchduleQueryVc.m in Sources */,
 				BCD786311B84AAB9008013FC /* EManggerMsg.m in Sources */,
-				A356ACDB1B9099B70097D5A6 /* SearchViewController.m in Sources */,
 				BC2678321B8B493A0065F3AE /* RadioGroup.m in Sources */,
 				BC270F0C1B78C4BD00F63F81 /* RATreeView+UIScrollView.m in Sources */,
-				BC59EC221B73AA310024C6D5 /* MGSchduleDetailVc.m in Sources */,
 				4DC2F30C1B661AF900099A35 /* EImavCell.m in Sources */,
-				BC36D65B1B7CE0F400A6A017 /* MGSelectedTaskerVc.m in Sources */,
 				BCB762801B837D3600262EFA /* MGChangeHeadImaVc.m in Sources */,
 				BC270F061B78C4BD00F63F81 /* RATreeNodeInfo+Private.m in Sources */,
 				BC270F101B78D41200F63F81 /* MGDeptCell.m in Sources */,
-				BC36D6571B7CCC0100A6A017 /* MGSelectedActivityVc.m in Sources */,
 				A3AB89901B995CCE004937A1 /* MJRefreshHeaderView.m in Sources */,
 				BC270F081B78C4BD00F63F81 /* RATreeView+Enums.m in Sources */,
 				BC36D6521B7CC4D900A6A017 /* MGActivityCell.m in Sources */,
@@ -1403,22 +1183,18 @@
 				BC36D65F1B7CE23900A6A017 /* MGEmployeeCell.m in Sources */,
 				BCF961CB1B76FF2000E9C737 /* MGTextFiledCell.m in Sources */,
 				A3AB898D1B995CCE004937A1 /* MJRefreshBaseView.m in Sources */,
-				A35FE71E1B953D9500DEEF69 /* ListVC.m in Sources */,
-				A356ACE01B909E060097D5A6 /* SearchListVC.m in Sources */,
 				4D3A50921B671CAD00F0A23F /* UITableViewCell+Add.m in Sources */,
 				BCDA73741B6F8824000E77E5 /* MGMineSchduleCell.m in Sources */,
 				BC270F071B78C4BD00F63F81 /* RATreeView.m in Sources */,
 				BC820B971B73A390007AB050 /* MGTaskerCell.m in Sources */,
 				BCD786431B84ABB7008013FC /* FMDatabaseQueue.m in Sources */,
 				A3EE25EE1B8D93DD00D3F476 /* GTMBase64.m in Sources */,
-				A3381E961B9FDC07007EC39F /* taskcell.m in Sources */,
 				4DEE688C1B6863600096FC8E /* MGWebVc.m in Sources */,
 				BC349A261B6A617500F074ED /* MGMangerSchduleModel.m in Sources */,
 				BC2019F81B7B908C0001FDD5 /* MGClientCell.m in Sources */,
 				BCB6EB771B76F26400134062 /* MGEmployeeModel.m in Sources */,
 				4D3A508E1B67040C00F0A23F /* MGChangePsdVc.m in Sources */,
 				4DC2F3081B66198600099A35 /* EAutoScrollView.m in Sources */,
-				BC26782B1B8B3E930065F3AE /* T2TActionTaskVc.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

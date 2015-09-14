@@ -10,7 +10,6 @@
 #import "EManggerMsg.h"
 #import "EMineOtherInfoCell.h"
 #import "MGMsgDetailVc.h"
-#import "workSpaceViewController.h"
 @interface MGMsgListVc ()<UITableViewDataSource,UITableViewDelegate>
 @property (nonatomic, strong) NSArray *arrData;
 @property (nonatomic, strong) UITableView *tableView;
@@ -84,33 +83,7 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
 
-    MGMsgDetailVc *dvc = [[MGMsgDetailVc alloc] init];
-    MGMsgModel *model =self.arrData[indexPath.row];
-    if (model.kind==3) {
-        workSpaceViewController *vc =[[workSpaceViewController alloc]init];
-        EManggerMsg *manger = [EManggerMsg shareEManggerMsg];
-        [manger deleteOneRecordWithId:model._id];
-        [self getDataFromDataBase];
-        [self.tableView reloadData];
-        [self.navigationController pushViewController:vc animated:YES];
 
-    }else if (model.kind==4){
-        workSpaceViewController *vc =[[workSpaceViewController alloc]init];
-        vc.isBookMessage=YES;
-        EManggerMsg *manger = [EManggerMsg shareEManggerMsg];
-        [manger deleteOneRecordWithId:model._id];
-        [self getDataFromDataBase];
-        [self.tableView reloadData];
-        [self.navigationController pushViewController:vc animated:YES];
-
-    }else{
-        dvc.model = self.arrData[indexPath.row];
-        [self.navigationController pushViewController:dvc animated:YES];
-    }
-    
-    [dvc setDeleteHandle:^{
-        [self getDataFromDataBase];
-    }];
 }
 
 

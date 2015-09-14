@@ -7,9 +7,6 @@
 //
 
 #import "SSTabBarController.h"
-#import "MGMineScheduleVc.h"
-#import "MGMineTaskVc.h"
-#import "MGMangerScheduleVc.h"
 @interface MGSecheduleHomeVC : SSTabBarController
 
 @end

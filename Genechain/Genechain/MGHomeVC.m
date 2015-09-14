@@ -208,30 +208,30 @@
 
 
 - (void)initializeSecheduleTab{
-    MGMineScheduleVc *msvc = [[MGMineScheduleVc alloc] init];
-    T2TNavController *msNav = getNavWithVc(msvc);
-    
-    MGMangerScheduleVc *mvc = [[MGMangerScheduleVc alloc] init];
-    T2TNavController *mNav = getNavWithVc(mvc);
-    
-    MGMineTaskVc *mtvc = [[MGMineTaskVc alloc] init];
-    T2TNavController *mtNav = getNavWithVc(mtvc);
-    
-    SSTabBarImage *tabBarImg1 =
-    [[SSTabBarImage alloc]initWithImageNames:@[@"schedule_tab1_normel",@"schedule_tab1_focus"]];
-    SSTabBarImage *tabBarImg2 =
-    [[SSTabBarImage alloc]initWithImageNames:@[@"kabao",@"kabao_h"]];
-    SSTabBarImage *tabBarImg3 =
-    [[SSTabBarImage alloc]initWithImageNames:@[@"wode",@"wode_h"]];
-    
-    MGSecheduleHomeVC *tab = [[MGSecheduleHomeVC alloc] initWithViewControllers:@[msNav,mNav,mtNav] imageArray:@[tabBarImg1,tabBarImg2,tabBarImg3] titleArray:@[@"我的日程",@"日程管理",@"我的任务"]];
-    CATransition *animation = [CATransition animation];
-    animation.duration = 0.35;
-    animation.timingFunction = UIViewAnimationCurveEaseInOut;
-    animation.type = @"reveal";
-    animation.subtype = kCATransitionFromRight;
-    [self.view.window.layer addAnimation:animation forKey:nil];
-    [self.navigationController presentViewController:tab animated:NO completion:nil];
+//    MGMineScheduleVc *msvc = [[MGMineScheduleVc alloc] init];
+//    T2TNavController *msNav = getNavWithVc(msvc);
+//    
+//    MGMangerScheduleVc *mvc = [[MGMangerScheduleVc alloc] init];
+//    T2TNavController *mNav = getNavWithVc(mvc);
+//    
+//    MGMineTaskVc *mtvc = [[MGMineTaskVc alloc] init];
+//    T2TNavController *mtNav = getNavWithVc(mtvc);
+//    
+//    SSTabBarImage *tabBarImg1 =
+//    [[SSTabBarImage alloc]initWithImageNames:@[@"schedule_tab1_normel",@"schedule_tab1_focus"]];
+//    SSTabBarImage *tabBarImg2 =
+//    [[SSTabBarImage alloc]initWithImageNames:@[@"kabao",@"kabao_h"]];
+//    SSTabBarImage *tabBarImg3 =
+//    [[SSTabBarImage alloc]initWithImageNames:@[@"wode",@"wode_h"]];
+//    
+//    MGSecheduleHomeVC *tab = [[MGSecheduleHomeVC alloc] initWithViewControllers:@[msNav,mNav,mtNav] imageArray:@[tabBarImg1,tabBarImg2,tabBarImg3] titleArray:@[@"我的日程",@"日程管理",@"我的任务"]];
+//    CATransition *animation = [CATransition animation];
+//    animation.duration = 0.35;
+//    animation.timingFunction = UIViewAnimationCurveEaseInOut;
+//    animation.type = @"reveal";
+//    animation.subtype = kCATransitionFromRight;
+//    [self.view.window.layer addAnimation:animation forKey:nil];
+//    [self.navigationController presentViewController:tab animated:NO completion:nil];
     
 }
 
