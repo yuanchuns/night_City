@@ -155,8 +155,13 @@
 
     AFHTTPRequestOperationManager *man = [AFHTTPRequestOperationManager manager];
     NSLog(@"%@",man.requestSerializer.HTTPRequestHeaders);
+    
+    
     [[AFHTTPRequestOperationManager manager] GET:urlStr parameters:parameter success:^(AFHTTPRequestOperation *operation, id responseObject) {
+        
+        
         if(view) [MBProgressHUD hideHUDForView:view animated:YES];
+        
         [self requestResponse:responseObject operation:operation success:success failure:failure];
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         if(view) [MBProgressHUD hideHUDForView:view animated:YES];
@@ -174,8 +179,15 @@
     
     NSLog(@"newHeader = %@",man.requestSerializer.HTTPRequestHeaders);
     [man GET:urlStr parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
+        
+        NSLog(@"==++==%@",responseObject);
         [self requestResponse:responseObject operation:operation success:success failure:failure];
+        
+        
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        
+        
+        
         if(failure) failure(error);
     }];
 }
@@ -195,6 +207,8 @@
     T2TResponse *response =[[T2TResponse alloc] initWithDic:responseObject];
     if (operation.response.statusCode >=200 && operation.response.statusCode <=299 ) {
         if(success) success(response);
+        NSLog(@"==+++=%@",response);
+        
     }else {
         if(failure) failure(response);
     }

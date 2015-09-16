@@ -20,7 +20,7 @@
 }
 
 + (void)autoCheckNetToView:(UIView *)view {
-    NSString *path = [NSString stringWithFormat:kMGDefaultURL,kMGVersionUrl,[MGGetStatusDicHaveUserName() JSONString]];//检测appstore
+    NSString *path = [NSString stringWithFormat:kMGDefaultURL,[MGGetStatusDicHaveUserName() JSONString]];//检测appstore
     MGUserModel *model =     [MGUserModel shareMGUserModel];
     if (model.netTYpe == MGNetWorkNotType) {
         [T2TView showFailHUDWithText:TEXT_NETWORK_ERROR ];

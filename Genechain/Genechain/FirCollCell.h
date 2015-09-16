@@ -7,6 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "firMode.h"
+
 static NSString *const MGHomeItemCellReuseRedifilerAndName = @"FirCollCell";
 
 @interface FirCollCell : UICollectionViewCell
@@ -14,5 +16,7 @@ static NSString *const MGHomeItemCellReuseRedifilerAndName = @"FirCollCell";
 @property (weak, nonatomic) IBOutlet UILabel *nameLB;
 @property (weak, nonatomic) IBOutlet UIImageView *VideoImage;
 @property (weak, nonatomic) IBOutlet UILabel *contentLB;
+@property(nonatomic,strong)firMode *model;
+
 
 @end

@@ -99,12 +99,12 @@ NS_INLINE NSDictionary *MGGetOtherHttpHear(){
 #define kCommonFont_38px  [UIFont fontWithName:@"STHeitiSC-Light" size:19]
 #define kCommonFont_40px  [UIFont fontWithName:@"STHeitiSC-Light" size:20]
 
-static int  kMGOkStatuCode = 1;
+static int  kMGOkStatuCode = 0;
 
 #pragma mark - url
 #pragma mark - request url
 
-static NSString *const kMGDefaultURL = @"http://210.14.73.175:7912/API/Video/GetHotVideo?%@";
+static NSString *const kMGDefaultURL = @"http://210.14.73.175:7912/API/Video/GetHotVideo?ReqMsg=%@";
 
 static NSString *const kMGDefaultImaURL = @"http://223.4.94.140:8091/pm/down/clientPhoto/%@.jpg";
 //登陆

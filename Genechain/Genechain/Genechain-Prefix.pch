@@ -24,15 +24,10 @@
 #endif
 
 
-#ifdef DEBUG
-#define NSLog( s, ... ) NSLog( @"<%p %@:(%d)> %@", self, [[NSString stringWithUTF8String:__FILE__] lastPathComponent], __LINE__, [NSString stringWithFormat:(s), ##__VA_ARGS__] )
-#else
-#define DLog( s, ... )
-#endif
 
-//// 应用程序发布的时候, 系统会自动去除名称叫做DEBUG的宏
-//#ifdef DEBUG  // 判断是否有DEBUG的宏, 如果有就编译下面一句, 如果没有就编译#else后面的一句
-//#define KLog(...)  NSLog(__VA_ARGS__)
-//#else
-//#define KLog(...)
-//#endif
+#ifdef DEBUG
+#define FLOG(str, args...) NSLog(@"\t[%s][%d][%s]  %@", strrchr(__FILE__, '/'), __LINE__, sel_getName(_cmd), [NSString stringWithFormat:str , ##args])
+//#define FLOG(fmt,...)    NSLog((@"[%@][%d] " fmt),[[NSString stringWithUTF8String:__FILE__] lastPathComponent], __LINE__,##__VA_ARGS__)
+#else
+#define FLOG(str, args...) ((void)0)
+#endif

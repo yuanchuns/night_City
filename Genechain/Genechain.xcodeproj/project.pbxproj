@@ -46,6 +46,8 @@
 		4DEFCDDD1B7D8D8D00B57F07 /* EAskSelectTypeBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DEFCDDB1B7D8D8D00B57F07 /* EAskSelectTypeBar.m */; };
 		4DEFCDDE1B7D8D8D00B57F07 /* EAskSelectTypeBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4DEFCDDC1B7D8D8D00B57F07 /* EAskSelectTypeBar.xib */; };
 		A33643A61B905C3C001EAA03 /* UIView+WY.m in Sources */ = {isa = PBXBuildFile; fileRef = A33643A51B905C3B001EAA03 /* UIView+WY.m */; };
+		A34246531BA7F8CF00548ECE /* T2TUrlEnCode.m in Sources */ = {isa = PBXBuildFile; fileRef = A34246521BA7F8CF00548ECE /* T2TUrlEnCode.m */; };
+		A349E07A1BA8FD8C00838A33 /* firMode.m in Sources */ = {isa = PBXBuildFile; fileRef = A349E0791BA8FD8C00838A33 /* firMode.m */; };
 		A3C1716B1BA662C400CFC775 /* FirViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3C171691BA662C400CFC775 /* FirViewController.m */; };
 		A3C1716C1BA662C400CFC775 /* FirViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A3C1716A1BA662C400CFC775 /* FirViewController.xib */; };
 		A3C171711BA6631300CFC775 /* SecViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3C1716F1BA6631300CFC775 /* SecViewController.m */; };
@@ -190,6 +192,10 @@
 		4DEFCDDC1B7D8D8D00B57F07 /* EAskSelectTypeBar.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EAskSelectTypeBar.xib; sourceTree = "<group>"; };
 		A33643A41B905C3B001EAA03 /* UIView+WY.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+WY.h"; sourceTree = "<group>"; };
 		A33643A51B905C3B001EAA03 /* UIView+WY.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+WY.m"; sourceTree = "<group>"; };
+		A34246511BA7F8CF00548ECE /* T2TUrlEnCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = T2TUrlEnCode.h; sourceTree = "<group>"; };
+		A34246521BA7F8CF00548ECE /* T2TUrlEnCode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = T2TUrlEnCode.m; sourceTree = "<group>"; };
+		A349E0781BA8FD8C00838A33 /* firMode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = firMode.h; sourceTree = "<group>"; };
+		A349E0791BA8FD8C00838A33 /* firMode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = firMode.m; sourceTree = "<group>"; };
 		A3C171681BA662C400CFC775 /* FirViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirViewController.h; sourceTree = "<group>"; };
 		A3C171691BA662C400CFC775 /* FirViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirViewController.m; sourceTree = "<group>"; };
 		A3C1716A1BA662C400CFC775 /* FirViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FirViewController.xib; sourceTree = "<group>"; };
@@ -584,6 +590,8 @@
 				A3C1718C1BA686C200CFC775 /* FirCollCell.h */,
 				A3C1718D1BA686C200CFC775 /* FirCollCell.m */,
 				A3C1718E1BA686C200CFC775 /* FirCollCell.xib */,
+				A349E0781BA8FD8C00838A33 /* firMode.h */,
+				A349E0791BA8FD8C00838A33 /* firMode.m */,
 			);
 			name = firScheduleMode;
 			sourceTree = "<group>";
@@ -691,6 +699,8 @@
 				BCC02BF51B862AE1003832C1 /* DES.m */,
 				A3EE25EB1B8D93DD00D3F476 /* GTMBase64.h */,
 				A3EE25EC1B8D93DD00D3F476 /* GTMBase64.m */,
+				A34246511BA7F8CF00548ECE /* T2TUrlEnCode.h */,
+				A34246521BA7F8CF00548ECE /* T2TUrlEnCode.m */,
 				A3EE25ED1B8D93DD00D3F476 /* GTMDefines.h */,
 			);
 			name = help;
@@ -997,6 +1007,7 @@
 				BCD786401B84ABB7008013FC /* FMDatabase.m in Sources */,
 				A3C1718F1BA686C200CFC775 /* FirCollCell.m in Sources */,
 				BCCDA0D31B68FAC4004A535D /* GestureViewController.m in Sources */,
+				A34246531BA7F8CF00548ECE /* T2TUrlEnCode.m in Sources */,
 				BCE5AE4B1B8E067F0027AC28 /* MGAddMineSchduleNoti.m in Sources */,
 				BCD7862E1B84A9E7008013FC /* MGMsgModel.m in Sources */,
 				BCC954571B66641A0064D852 /* MGSecurityHomeVc.m in Sources */,
@@ -1012,6 +1023,7 @@
 				BC270F0C1B78C4BD00F63F81 /* RATreeView+UIScrollView.m in Sources */,
 				4DC2F30C1B661AF900099A35 /* EImavCell.m in Sources */,
 				BCB762801B837D3600262EFA /* MGChangeHeadImaVc.m in Sources */,
+				A349E07A1BA8FD8C00838A33 /* firMode.m in Sources */,
 				BC270F061B78C4BD00F63F81 /* RATreeNodeInfo+Private.m in Sources */,
 				A3C1716B1BA662C400CFC775 /* FirViewController.m in Sources */,
 				BC270F081B78C4BD00F63F81 /* RATreeView+Enums.m in Sources */,

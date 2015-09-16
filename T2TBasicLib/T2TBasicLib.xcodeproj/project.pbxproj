@@ -200,6 +200,8 @@
 		4DFC708F1B2516E600F18C2F /* T2TTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DFC708E1B2516E600F18C2F /* T2TTextView.m */; };
 		4DFC70901B251A5900F18C2F /* T2TTextView.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4DFC708D1B2516E600F18C2F /* T2TTextView.h */; };
 		A33643A31B905C0E001EAA03 /* UIView+WY.m in Sources */ = {isa = PBXBuildFile; fileRef = A33643A21B905C0E001EAA03 /* UIView+WY.m */; };
+		A34246561BA8020600548ECE /* HTTPHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = A34246551BA8020600548ECE /* HTTPHelper.m */; };
+		A34246571BA8026A00548ECE /* HTTPHelper.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = A34246541BA8020600548ECE /* HTTPHelper.h */; };
 		A3C171961BA6AA9400CFC775 /* UIView+WY.m in Sources */ = {isa = PBXBuildFile; fileRef = A3C171951BA6AA9400CFC775 /* UIView+WY.m */; };
 		A3C171971BA6AAA900CFC775 /* UIView+WY.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = A3C171941BA6AA9400CFC775 /* UIView+WY.h */; };
 		B11D9E581A47B92600FD1306 /* NSObject+EFoundation.m in Sources */ = {isa = PBXBuildFile; fileRef = B11D9E571A47B92600FD1306 /* NSObject+EFoundation.m */; };
@@ -242,6 +244,7 @@
 			dstPath = "include/$(PRODUCE_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
+				A34246571BA8026A00548ECE /* HTTPHelper.h in CopyFiles */,
 				A3C171971BA6AAA900CFC775 /* UIView+WY.h in CopyFiles */,
 				BCF961DA1B770DCC00E9C737 /* T2TDatePikerActionSheet.h in CopyFiles */,
 				BCF961D91B770DC500E9C737 /* T2TCustomActionSheet.h in CopyFiles */,
@@ -499,6 +502,8 @@
 		4DFC708E1B2516E600F18C2F /* T2TTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = T2TTextView.m; sourceTree = "<group>"; };
 		A33643A11B905C0E001EAA03 /* UIView+WY.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+WY.h"; sourceTree = "<group>"; };
 		A33643A21B905C0E001EAA03 /* UIView+WY.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+WY.m"; sourceTree = "<group>"; };
+		A34246541BA8020600548ECE /* HTTPHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPHelper.h; sourceTree = "<group>"; };
+		A34246551BA8020600548ECE /* HTTPHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPHelper.m; sourceTree = "<group>"; };
 		A3C171941BA6AA9400CFC775 /* UIView+WY.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+WY.h"; sourceTree = "<group>"; };
 		A3C171951BA6AA9400CFC775 /* UIView+WY.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+WY.m"; sourceTree = "<group>"; };
 		B11D9E561A47B92600FD1306 /* NSObject+EFoundation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+EFoundation.h"; sourceTree = "<group>"; };
@@ -705,6 +710,8 @@
 				4DD5182F1B65D91700053322 /* T2TNavController.m */,
 				4DD518301B65D91700053322 /* T2TViewController.h */,
 				4DD518311B65D91700053322 /* T2TViewController.m */,
+				A34246541BA8020600548ECE /* HTTPHelper.h */,
+				A34246551BA8020600548ECE /* HTTPHelper.m */,
 			);
 			name = basic;
 			sourceTree = "<group>";
@@ -1020,6 +1027,7 @@
 				4D18B7D11B144CE700755907 /* AESCrypt.m in Sources */,
 				4D18B7D21B144CE700755907 /* NSData+Base64.m in Sources */,
 				4D18B7D31B144CE700755907 /* NSData+CommonCrypto.m in Sources */,
+				A34246561BA8020600548ECE /* HTTPHelper.m in Sources */,
 				4D18B7D41B144CE700755907 /* NSString+Base64.m in Sources */,
 				4DE5BA9E1A66942D00F0D15E /* EPullNewVC.m in Sources */,
 				D37F62CD1A52506900DA7690 /* DOPDropDownMenu.m in Sources */,

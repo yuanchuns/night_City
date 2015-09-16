@@ -8,17 +8,26 @@
 
 #import "FirViewController.h"
 #import "FirCollCell.h"
-@interface FirViewController ()<UICollectionViewDataSource,UICollectionViewDelegate>
+#import "HTTPHelper.h"
+#import "firMode.h"
 
+@interface FirViewController ()<UICollectionViewDataSource,UICollectionViewDelegate,RefreshControlDelegate>
+
+@property(nonatomic)int page;
 @property(nonatomic,strong)UICollectionView *collectionView;
-@property(nonatomic,strong)NSMutableArray *arrData;
+@property (nonatomic, strong) NSMutableArray *arrData;//数据源
+
 @end
 
 @implementation FirViewController
+#pragma mark - public
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.page = 1;
+    self.arrData = [NSMutableArray array];
     NSArray *segmentedArray = [[NSArray alloc]initWithObjects:@"热门",@"广场",@"关注",nil];
     UISegmentedControl *segmentedControl = [[UISegmentedControl alloc]initWithItems:segmentedArray];
     segmentedControl.frame =CGRectMake(0.0f, 0.0f, 150.0f, 30.0f);
@@ -42,7 +51,8 @@
     self.collectionView.scrollEnabled = YES;
     [self.view addSubview:self.collectionView];
     [self.collectionView registerNib:[UINib nibWithNibName:MGHomeItemCellReuseRedifilerAndName bundle:nil] forCellWithReuseIdentifier:MGHomeItemCellReuseRedifilerAndName];
-
+    [self requestTopicView_dataSoure_connection];
+    
     // Do any additional setup after loading the view from its nib.
 }
 
@@ -51,7 +61,6 @@
     switch (Index) {
             
         case 0:
-
             break;
             
         case 1:
@@ -65,40 +74,39 @@
         default:
             
             break;
-            
     }
-
 }
-
 #pragma mark - dataSoure
-
-- (NSString *)getRequestUrlStr{
-    //http://223.4.94.140:8091/pm/appTask!p201MyTaskList.action?word={"status":{"userName":"伍然","beanName":"status","parameter":"2","ver":"1.0.0","sessionId":"C9C5F778A2419EE36C2EACA9BD4B13D8","loginName":"wuran"},"object":{"pageNo":1,"clientName":""}}
-    //    NSString *indexStr = [NSString stringWithFormat:@"%ld",self.curIndex];
-    //  http://210.14.73.175:7912/API/Video/GetHotVideo?ReqMsg={"PageIndex":0,"PageSize":16} HTTP/1.1
-
-    NSString *str = [NSString stringWithFormat:kMGDefaultURL,[@{@"ReqMsg":@{@"PageIndex":@(0),@"PageSize":@(16)}} JSONString]];
-    return str;
-}
-
-- (void)handleContentResponse:(T2TResponse *)content{
-    
-    if ([content.list isKindOfClass:[NSArray class]] && content.code == kMGOkStatuCode) {
+-(void)requestTopicView_dataSoure_connection
+{
+    NSString *url = [NSString stringWithFormat:kMGDefaultURL,[@{@"PageIndex":@"0",@"PageSize":@"16"} JSONString]];
+    MBProgressHUD *hub = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
+    AFHTTPRequestOperationManager *man = [AFHTTPRequestOperationManager manager];
+    [man GET:url parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
+        [hub hide:YES];
         
-    NSLog(<#NSString *format, ...#>)
-                for (NSDictionary *dic in content.list) {
-            //            MGMineTaskModel *model = [[MGMineTaskModel alloc] initWithDic:dic];
-            //            [self.arrData addObject:model];
+    if ([responseObject[@"code"] integerValue]== kMGOkStatuCode) {
+        NSArray *totalArr = [NSArray arrayWithArray:responseObject[@"List"]];
+        for (NSDictionary *dict in totalArr) {
+            firMode *model =[[firMode alloc]initWithDic:dict];
+            [self.arrData  addObject:model];
         }
-    }
-}
+        [self.collectionView reloadData];
 
+    }
+        FLOG(@"responseObject====%@", responseObject);
+    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        [hub hide:YES];
+        FLOG(@"error====%@", error);
+    }];
+    
+}
 #pragma mark - colletionViewDelegate
 
 //定义展示的UICollectionViewCell的个数
 -(NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
 {
-    return 30;
+    return self.arrData.count;
 }
 //定义展示的Section的个数
 -(NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView
@@ -108,14 +116,15 @@
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
     FirCollCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:MGHomeItemCellReuseRedifilerAndName forIndexPath:indexPath];
-    
+    firMode *model =self.arrData[indexPath.item];
+    cell.model = model;
     return cell;
     
 }
 //定义每个UICollectionView 的大小
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath{
     
-    return CGSizeMake((kScreenWidth-20)/2+2.5, 262.0);
+    return CGSizeMake((kScreenWidth-20)/2+2.5, 272.0);
 }
 
 - (CGFloat)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout minimumInteritemSpacingForSectionAtIndex:(NSInteger)section{

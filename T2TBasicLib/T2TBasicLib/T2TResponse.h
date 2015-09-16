@@ -9,7 +9,7 @@
 #import "T2TObject.h"
 
 @interface T2TResponse : T2TObject
-@property (nonatomic,strong) id data;
+@property (nonatomic,strong) id List;
 @property(nonatomic, assign)NSUInteger s;//服务器状态码
 @property(nonatomic, strong)NSString *msg;//登陆信息
 @property(nonatomic,strong)id list;//符合条件的信息
@@ -18,9 +18,9 @@
 @property(nonatomic,assign)NSUInteger pgSize;
 
 @property (nonatomic, assign)int code;
-@property (nonatomic, copy) NSString *reson;
-@property (nonatomic, copy) NSString *beanName;
 @property (nonatomic, copy) NSString *parameter;
+@property (nonatomic, copy) NSString *beanName;
+@property (nonatomic, copy) NSString *reson;
 @property (nonatomic, copy) NSDictionary *userInfo;
 @property (nonatomic, copy) NSString *url;
 @property (nonatomic, strong) id object;

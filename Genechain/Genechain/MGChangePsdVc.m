@@ -78,7 +78,7 @@
     NSLog(@"===++++==%@",dicPost);
     
     MBProgressHUD *hub = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
-    [T2THttpManager getWithUrl:[NSString stringWithFormat:kMGDefaultURL,kMGChangePwdUrl,[dicPost JSONString]] success:^(T2TResponse *responseObject) {
+    [T2THttpManager getWithUrl:[NSString stringWithFormat:kMGDefaultURL,[dicPost JSONString]] success:^(T2TResponse *responseObject) {
         if(responseObject.code == kMGOkStatuCode) {
             [T2TView showOKHUDWithHUD:hub test:@"修改成功"];
             [self.navigationController popViewControllerAnimated:YES];

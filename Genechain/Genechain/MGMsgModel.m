@@ -14,7 +14,7 @@
 //    /pm/appManage!message.action?word={"status":{"userName":"伍然","beanName":"status","parameter":"2","ver":"1.0.0","sessionId":"C254240C1285B11110A0A10005A9CEE1","loginName":"wuran"}}
     
     NSDictionary *dic = @{@"status":MGGetStatusDicHaveUserName()};
-    NSString *urlStr = [NSString stringWithFormat:kMGDefaultURL,kMGMessageUrl,[dic JSONString]];
+    NSString *urlStr = [NSString stringWithFormat:kMGDefaultURL,[dic JSONString]];
     
     [T2THttpManager getWithUrl:urlStr success:^(T2TResponse *responseObject) {
        

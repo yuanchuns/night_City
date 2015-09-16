@@ -43,7 +43,7 @@
     [dicRequest setObject:kUnNilStr(model.userName) forKey:@"userName"];
     
    
-    [T2THttpManager getWithUrl:[NSString stringWithFormat:kMGDefaultURL,kMGTestUrl,[@{@"status":dicRequest} JSONString]] success:^(T2TResponse *responseObject) {
+    [T2THttpManager getWithUrl:[NSString stringWithFormat:kMGDefaultURL,[@{@"status":dicRequest} JSONString]] success:^(T2TResponse *responseObject) {
         
         if (responseObject.code == kMGOkStatuCode) {
             [self.webView loadRequest:[[NSURLRequest alloc] initWithURL:[NSURL URLWithString:responseObject.url]]];
