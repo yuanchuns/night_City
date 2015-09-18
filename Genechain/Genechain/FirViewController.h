@@ -7,7 +7,6 @@
 //
 
 #import "T2TViewController.h"
-#import "EPullNewVC.h"
 @interface FirViewController : T2TViewController
 
 

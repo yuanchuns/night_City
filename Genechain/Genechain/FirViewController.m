@@ -10,7 +10,6 @@
 #import "FirCollCell.h"
 #import "HTTPHelper.h"
 #import "firMode.h"
-#import "RefreshControl.h"
 
 @interface FirViewController ()<UICollectionViewDataSource,UICollectionViewDelegate,RefreshControlDelegate>
 
@@ -23,7 +22,9 @@
 
 @implementation FirViewController
 #pragma mark - public
+-(void)canEngageRefresh{
 
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -44,7 +45,7 @@
     
     self.navigationItem.leftBarButtonItem = nil;
     UICollectionViewFlowLayout *flowLayOut = [[UICollectionViewFlowLayout alloc] init];
-    self.collectionView = [[UICollectionView alloc] initWithFrame:CGRectMake(0,0, kScreenWidth, kScreenHeight) collectionViewLayout:flowLayOut];
+    self.collectionView = [[UICollectionView alloc] initWithFrame:CGRectMake(0,0, kScreenWidth, kScreenHeight-64) collectionViewLayout:flowLayOut];
     self.collectionView.backgroundColor =[UIColor colorWithRed:0.14f green:0.16f blue:0.17f alpha:1.00f];
     self.collectionView.dataSource = self;
     self.collectionView.delegate = self;
@@ -53,54 +54,19 @@
     self.collectionView.scrollEnabled = YES;
     [self.view addSubview:self.collectionView];
     [self.collectionView registerNib:[UINib nibWithNibName:MGHomeItemCellReuseRedifilerAndName bundle:nil] forCellWithReuseIdentifier:MGHomeItemCellReuseRedifilerAndName];
-    [self requestTopicView_dataSoure_connection];
+    self.refresh=[[RefreshControl alloc] initWithScrollView:_collectionView delegate:self];
+    self.refresh.delegate = self;
+    self.refresh.topEnabled=YES;
+    [self.refresh startRefreshingDirection:RefreshDirectionTop];
     
-    _refresh=[[RefreshControl alloc] initWithScrollView:_collectionView delegate:self];
-    _refresh.topEnabled=YES;
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.25 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        [_refresh startRefreshingDirection:RefreshDirectionTop];
-    });
-    
-
-    
-    // Do any additional setup after loading the view from its nib.
 }
-- (void)refresh:(RefreshControl *)refresh didEngageRefreshDirection:(RefreshDirection)direction
-{
-    
+- (void)refreshControl:(RefreshControl *)refreshControl didEngageRefreshDirection:(RefreshDirection)direction{
     __weak typeof(self)weakSelf=self;
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         __strong typeof(weakSelf)strongSelf=weakSelf;
-        [strongSelf requestTopicView_dataSoure_connection];
+        [strongSelf requestTopicView_dataSoure_connectionDirection:direction];
     });
-    
-    
 }
-- (void)addDataForDirection:(RefreshDirection)direction
-{
-    if (self.arrData==nil) {
-        self.arrData=[[NSMutableArray alloc] init];
-    }
-    if (self.refresh.refreshingDirection==RefreshDirectionTop)
-    {
-        [self.arrData removeAllObjects];
-    }
-    [self.refresh finishRefreshingDirection:direction withIsNetData:[NSDate date]];
-    [self.collectionView reloadData];
-    ///设置是否有下拉刷新
-    if ([self.arrData count]>10)
-    {
-        self.refresh.bottomEnabled=YES;
-    }
-    else{
-        self.refresh.bottomEnabled=NO;
-    }
-    
-    
-    
-}
-
-
 -(void)SelectbuttonAction:(UISegmentedControl *)seg{
     NSInteger Index = seg.selectedSegmentIndex;
     switch (Index) {
@@ -123,14 +89,19 @@
     }
 }
 #pragma mark - dataSoure
--(void)requestTopicView_dataSoure_connection
+-(void)requestTopicView_dataSoure_connectionDirection:(RefreshDirection)direction
 {
     NSString *url = [NSString stringWithFormat:kMGDefaultURL,[@{@"PageIndex":@"0",@"PageSize":@"16"} JSONString]];
     MBProgressHUD *hub = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
     AFHTTPRequestOperationManager *man = [AFHTTPRequestOperationManager manager];
     [man GET:url parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
-        [hub hide:YES];
-        
+    [hub hide:YES];
+    if (self.refresh.refreshingDirection==RefreshDirectionTop)
+        {
+            [self.arrData removeAllObjects];
+        }
+        [self.refresh finishRefreshingDirection:direction withIsNetData:[NSDate date]];
+        self.refresh.bottomEnabled=YES;
         
     if ([responseObject[@"code"] integerValue]== kMGOkStatuCode) {
         NSArray *totalArr = [NSArray arrayWithArray:responseObject[@"List"]];

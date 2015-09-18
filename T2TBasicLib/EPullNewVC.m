@@ -58,21 +58,14 @@
 
 -(void)navBackAction:(UIBarButtonItem *)backBar
 {
-
     if (self.navigationController.viewControllers.count > 1) {
         [self.navigationController popViewControllerAnimated:YES];
     }else{
         [self.navigationController dismissViewControllerAnimated:YES completion:nil];
     }
-    
 }
-
-
 #pragma mark - public
-
-
 -(void)setIsNotMore:(BOOL)isNotMore{
-
     _isNotMore = isNotMore;
     self.control.isReachEnd = isNotMore;
 }

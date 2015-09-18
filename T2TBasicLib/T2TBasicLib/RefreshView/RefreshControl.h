@@ -52,7 +52,7 @@ typedef enum {
  *	下拉刷新-上拉加载更多
  */
 @interface RefreshControl : NSObject
-
+@property (nonatomic, weak) id<RefreshControlDelegate> delegate;
 ///当前的状态
 @property (nonatomic,assign,readonly)RefreshingDirections refreshingDirection;
 
