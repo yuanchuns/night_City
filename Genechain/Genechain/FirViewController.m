@@ -10,12 +10,14 @@
 #import "FirCollCell.h"
 #import "HTTPHelper.h"
 #import "firMode.h"
+#import "RefreshControl.h"
 
 @interface FirViewController ()<UICollectionViewDataSource,UICollectionViewDelegate,RefreshControlDelegate>
 
 @property(nonatomic)int page;
 @property(nonatomic,strong)UICollectionView *collectionView;
 @property (nonatomic, strong) NSMutableArray *arrData;//数据源
+@property (nonatomic,strong)RefreshControl * refresh;
 
 @end
 
@@ -53,8 +55,51 @@
     [self.collectionView registerNib:[UINib nibWithNibName:MGHomeItemCellReuseRedifilerAndName bundle:nil] forCellWithReuseIdentifier:MGHomeItemCellReuseRedifilerAndName];
     [self requestTopicView_dataSoure_connection];
     
+    _refresh=[[RefreshControl alloc] initWithScrollView:_collectionView delegate:self];
+    _refresh.topEnabled=YES;
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.25 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        [_refresh startRefreshingDirection:RefreshDirectionTop];
+    });
+    
+
+    
     // Do any additional setup after loading the view from its nib.
 }
+- (void)refresh:(RefreshControl *)refresh didEngageRefreshDirection:(RefreshDirection)direction
+{
+    
+    __weak typeof(self)weakSelf=self;
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        __strong typeof(weakSelf)strongSelf=weakSelf;
+        [strongSelf requestTopicView_dataSoure_connection];
+    });
+    
+    
+}
+- (void)addDataForDirection:(RefreshDirection)direction
+{
+    if (self.arrData==nil) {
+        self.arrData=[[NSMutableArray alloc] init];
+    }
+    if (self.refresh.refreshingDirection==RefreshDirectionTop)
+    {
+        [self.arrData removeAllObjects];
+    }
+    [self.refresh finishRefreshingDirection:direction withIsNetData:[NSDate date]];
+    [self.collectionView reloadData];
+    ///设置是否有下拉刷新
+    if ([self.arrData count]>10)
+    {
+        self.refresh.bottomEnabled=YES;
+    }
+    else{
+        self.refresh.bottomEnabled=NO;
+    }
+    
+    
+    
+}
+
 
 -(void)SelectbuttonAction:(UISegmentedControl *)seg{
     NSInteger Index = seg.selectedSegmentIndex;
@@ -71,8 +116,9 @@
             
             break;
             
-        default:
             
+            
+        default:
             break;
     }
 }
@@ -84,6 +130,7 @@
     AFHTTPRequestOperationManager *man = [AFHTTPRequestOperationManager manager];
     [man GET:url parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
         [hub hide:YES];
+        
         
     if ([responseObject[@"code"] integerValue]== kMGOkStatuCode) {
         NSArray *totalArr = [NSArray arrayWithArray:responseObject[@"List"]];

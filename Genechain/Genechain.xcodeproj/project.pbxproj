@@ -39,7 +39,6 @@
 		4DC2F31B1B6623B000099A35 /* MGTestHomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DC2F31A1B6623B000099A35 /* MGTestHomeVC.m */; };
 		4DD9E1801B69AD6800F26779 /* PCCircleViewConst.m in Sources */ = {isa = PBXBuildFile; fileRef = BCCDA0C11B68FAAA004A535D /* PCCircleViewConst.m */; };
 		4DECEE741B86C58900452EE3 /* EAPPUnit.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DECEE731B86C58900452EE3 /* EAPPUnit.m */; };
-		4DEE68841B6855120096FC8E /* TBasicLibResource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 4DEE68831B6855120096FC8E /* TBasicLibResource.bundle */; };
 		4DEE68881B685CBF0096FC8E /* MGHomeImaModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DEE68871B685CBF0096FC8E /* MGHomeImaModel.m */; };
 		4DEE688C1B6863600096FC8E /* MGWebVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DEE688A1B6863600096FC8E /* MGWebVc.m */; };
 		4DEE688D1B6863600096FC8E /* MGWebVc.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4DEE688B1B6863600096FC8E /* MGWebVc.xib */; };
@@ -48,6 +47,7 @@
 		A33643A61B905C3C001EAA03 /* UIView+WY.m in Sources */ = {isa = PBXBuildFile; fileRef = A33643A51B905C3B001EAA03 /* UIView+WY.m */; };
 		A34246531BA7F8CF00548ECE /* T2TUrlEnCode.m in Sources */ = {isa = PBXBuildFile; fileRef = A34246521BA7F8CF00548ECE /* T2TUrlEnCode.m */; };
 		A349E07A1BA8FD8C00838A33 /* firMode.m in Sources */ = {isa = PBXBuildFile; fileRef = A349E0791BA8FD8C00838A33 /* firMode.m */; };
+		A349E0971BA918B700838A33 /* TBasicLibResource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A349E0961BA918B700838A33 /* TBasicLibResource.bundle */; };
 		A3C1716B1BA662C400CFC775 /* FirViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3C171691BA662C400CFC775 /* FirViewController.m */; };
 		A3C1716C1BA662C400CFC775 /* FirViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A3C1716A1BA662C400CFC775 /* FirViewController.xib */; };
 		A3C171711BA6631300CFC775 /* SecViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3C1716F1BA6631300CFC775 /* SecViewController.m */; };
@@ -181,7 +181,6 @@
 		4DC2F31A1B6623B000099A35 /* MGTestHomeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGTestHomeVC.m; sourceTree = "<group>"; };
 		4DECEE721B86C58900452EE3 /* EAPPUnit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EAPPUnit.h; sourceTree = "<group>"; };
 		4DECEE731B86C58900452EE3 /* EAPPUnit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EAPPUnit.m; sourceTree = "<group>"; };
-		4DEE68831B6855120096FC8E /* TBasicLibResource.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = TBasicLibResource.bundle; sourceTree = "<group>"; };
 		4DEE68861B685CBF0096FC8E /* MGHomeImaModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGHomeImaModel.h; sourceTree = "<group>"; };
 		4DEE68871B685CBF0096FC8E /* MGHomeImaModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGHomeImaModel.m; sourceTree = "<group>"; };
 		4DEE68891B6863600096FC8E /* MGWebVc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGWebVc.h; sourceTree = "<group>"; };
@@ -196,6 +195,7 @@
 		A34246521BA7F8CF00548ECE /* T2TUrlEnCode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = T2TUrlEnCode.m; sourceTree = "<group>"; };
 		A349E0781BA8FD8C00838A33 /* firMode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = firMode.h; sourceTree = "<group>"; };
 		A349E0791BA8FD8C00838A33 /* firMode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = firMode.m; sourceTree = "<group>"; };
+		A349E0961BA918B700838A33 /* TBasicLibResource.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = TBasicLibResource.bundle; sourceTree = "<group>"; };
 		A3C171681BA662C400CFC775 /* FirViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirViewController.h; sourceTree = "<group>"; };
 		A3C171691BA662C400CFC775 /* FirViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirViewController.m; sourceTree = "<group>"; };
 		A3C1716A1BA662C400CFC775 /* FirViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FirViewController.xib; sourceTree = "<group>"; };
@@ -397,9 +397,9 @@
 		4D755C0C1B660BB900D6290F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A349E0961BA918B700838A33 /* TBasicLibResource.bundle */,
 				BC8450CB1BA06C7500156435 /* AVFoundation.framework */,
 				BCD786451B84AC1B008013FC /* libsqlite3.dylib */,
-				4DEE68831B6855120096FC8E /* TBasicLibResource.bundle */,
 				BCC9544F1B6652050064D852 /* Security.framework */,
 				4DC2F2E91B660C6200099A35 /* libT2TBasicLib.a */,
 				4D755C0D1B660BB900D6290F /* Foundation.framework */,
@@ -932,6 +932,7 @@
 				BCC02BF01B860165003832C1 /* MGMsgDetailVc.xib in Resources */,
 				BCB762811B837D3600262EFA /* MGChangeHeadImaVc.xib in Resources */,
 				4DC2F3041B66169400099A35 /* MGLoginVC.xib in Resources */,
+				A349E0971BA918B700838A33 /* TBasicLibResource.bundle in Resources */,
 				A3C1716C1BA662C400CFC775 /* FirViewController.xib in Resources */,
 				BCB7628B1B83876F00262EFA /* MGAbooutVc.xib in Resources */,
 				4D755C181B660BB900D6290F /* InfoPlist.strings in Resources */,
@@ -942,7 +943,6 @@
 				BCB762861B8380A500262EFA /* MGImavHeadCell.xib in Resources */,
 				4D755C201B660BB900D6290F /* Images.xcassets in Resources */,
 				BCC9545D1B6664A70064D852 /* EMineSeitchCell.xib in Resources */,
-				4DEE68841B6855120096FC8E /* TBasicLibResource.bundle in Resources */,
 				A3C171721BA6631300CFC775 /* SecViewController.xib in Resources */,
 				4DC2F3121B661D5F00099A35 /* MGHomeItemCell.xib in Resources */,
 				BC51F0DC1B8CA33A00DEB259 /* scree.xib in Resources */,

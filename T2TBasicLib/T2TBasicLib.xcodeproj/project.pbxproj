@@ -202,6 +202,8 @@
 		A33643A31B905C0E001EAA03 /* UIView+WY.m in Sources */ = {isa = PBXBuildFile; fileRef = A33643A21B905C0E001EAA03 /* UIView+WY.m */; };
 		A34246561BA8020600548ECE /* HTTPHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = A34246551BA8020600548ECE /* HTTPHelper.m */; };
 		A34246571BA8026A00548ECE /* HTTPHelper.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = A34246541BA8020600548ECE /* HTTPHelper.h */; };
+		A3507D021BAB987400DCCA54 /* UILabel+ContentSize.m in Sources */ = {isa = PBXBuildFile; fileRef = A3507D011BAB987400DCCA54 /* UILabel+ContentSize.m */; };
+		A3507D031BAB988D00DCCA54 /* UILabel+ContentSize.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = A3507D001BAB987400DCCA54 /* UILabel+ContentSize.h */; };
 		A3C171961BA6AA9400CFC775 /* UIView+WY.m in Sources */ = {isa = PBXBuildFile; fileRef = A3C171951BA6AA9400CFC775 /* UIView+WY.m */; };
 		A3C171971BA6AAA900CFC775 /* UIView+WY.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = A3C171941BA6AA9400CFC775 /* UIView+WY.h */; };
 		B11D9E581A47B92600FD1306 /* NSObject+EFoundation.m in Sources */ = {isa = PBXBuildFile; fileRef = B11D9E571A47B92600FD1306 /* NSObject+EFoundation.m */; };
@@ -244,6 +246,7 @@
 			dstPath = "include/$(PRODUCE_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
+				A3507D031BAB988D00DCCA54 /* UILabel+ContentSize.h in CopyFiles */,
 				A34246571BA8026A00548ECE /* HTTPHelper.h in CopyFiles */,
 				A3C171971BA6AAA900CFC775 /* UIView+WY.h in CopyFiles */,
 				BCF961DA1B770DCC00E9C737 /* T2TDatePikerActionSheet.h in CopyFiles */,
@@ -504,6 +507,8 @@
 		A33643A21B905C0E001EAA03 /* UIView+WY.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+WY.m"; sourceTree = "<group>"; };
 		A34246541BA8020600548ECE /* HTTPHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPHelper.h; sourceTree = "<group>"; };
 		A34246551BA8020600548ECE /* HTTPHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPHelper.m; sourceTree = "<group>"; };
+		A3507D001BAB987400DCCA54 /* UILabel+ContentSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+ContentSize.h"; sourceTree = "<group>"; };
+		A3507D011BAB987400DCCA54 /* UILabel+ContentSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+ContentSize.m"; sourceTree = "<group>"; };
 		A3C171941BA6AA9400CFC775 /* UIView+WY.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+WY.h"; sourceTree = "<group>"; };
 		A3C171951BA6AA9400CFC775 /* UIView+WY.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+WY.m"; sourceTree = "<group>"; };
 		B11D9E561A47B92600FD1306 /* NSObject+EFoundation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+EFoundation.h"; sourceTree = "<group>"; };
@@ -591,10 +596,12 @@
 		4D220C811A394813005330C6 /* T2TBasicLib */ = {
 			isa = PBXGroup;
 			children = (
+				A3507D001BAB987400DCCA54 /* UILabel+ContentSize.h */,
+				A3507D011BAB987400DCCA54 /* UILabel+ContentSize.m */,
 				4D220C821A394813005330C6 /* T2TBasicLib.h */,
+				4D220C841A394813005330C6 /* T2TBasicLib.m */,
 				A3C171941BA6AA9400CFC775 /* UIView+WY.h */,
 				A3C171951BA6AA9400CFC775 /* UIView+WY.m */,
-				4D220C841A394813005330C6 /* T2TBasicLib.m */,
 				4D220CA41A3948AE005330C6 /* ThirdLib */,
 				4D5FEDF41A3A70BC00BA1B71 /* UI */,
 				4D5FEDFF1A3A728400BA1B71 /* Category */,
@@ -1085,6 +1092,7 @@
 				4D5FEE251A3A816A00BA1B71 /* UIView+AddOther.m in Sources */,
 				4D5FEE021A3A729700BA1B71 /* UIImage+TCategory.m in Sources */,
 				4D220CCF1A394947005330C6 /* NSObject+Model.m in Sources */,
+				A3507D021BAB987400DCCA54 /* UILabel+ContentSize.m in Sources */,
 				B11D9E581A47B92600FD1306 /* NSObject+EFoundation.m in Sources */,
 				4D5FEE221A3A7E1500BA1B71 /* T2TButton.m in Sources */,
 				B1EEBF281A79D99400D233A2 /* UIAlertView+EBlock.m in Sources */,
