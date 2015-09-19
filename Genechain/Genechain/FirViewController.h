@@ -9,7 +9,6 @@
 #import "T2TViewController.h"
 @interface FirViewController : T2TViewController
 
-
-
+@property (nonatomic, copy) EditFailedViewBlock failedViewBlock;
 
 @end

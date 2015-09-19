@@ -202,6 +202,8 @@
 		A33643A31B905C0E001EAA03 /* UIView+WY.m in Sources */ = {isa = PBXBuildFile; fileRef = A33643A21B905C0E001EAA03 /* UIView+WY.m */; };
 		A34246561BA8020600548ECE /* HTTPHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = A34246551BA8020600548ECE /* HTTPHelper.m */; };
 		A34246571BA8026A00548ECE /* HTTPHelper.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = A34246541BA8020600548ECE /* HTTPHelper.h */; };
+		A34CC4A01BAD6C7E0061266C /* EPPullCollectionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A34CC49F1BAD6C7E0061266C /* EPPullCollectionVC.m */; };
+		A34CC4A11BAD71110061266C /* EPPullCollectionVC.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = A34CC49E1BAD6C7E0061266C /* EPPullCollectionVC.h */; };
 		A3507D021BAB987400DCCA54 /* UILabel+ContentSize.m in Sources */ = {isa = PBXBuildFile; fileRef = A3507D011BAB987400DCCA54 /* UILabel+ContentSize.m */; };
 		A3507D031BAB988D00DCCA54 /* UILabel+ContentSize.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = A3507D001BAB987400DCCA54 /* UILabel+ContentSize.h */; };
 		A3C171961BA6AA9400CFC775 /* UIView+WY.m in Sources */ = {isa = PBXBuildFile; fileRef = A3C171951BA6AA9400CFC775 /* UIView+WY.m */; };
@@ -246,6 +248,7 @@
 			dstPath = "include/$(PRODUCE_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
+				A34CC4A11BAD71110061266C /* EPPullCollectionVC.h in CopyFiles */,
 				A3507D031BAB988D00DCCA54 /* UILabel+ContentSize.h in CopyFiles */,
 				A34246571BA8026A00548ECE /* HTTPHelper.h in CopyFiles */,
 				A3C171971BA6AAA900CFC775 /* UIView+WY.h in CopyFiles */,
@@ -507,6 +510,8 @@
 		A33643A21B905C0E001EAA03 /* UIView+WY.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+WY.m"; sourceTree = "<group>"; };
 		A34246541BA8020600548ECE /* HTTPHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPHelper.h; sourceTree = "<group>"; };
 		A34246551BA8020600548ECE /* HTTPHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPHelper.m; sourceTree = "<group>"; };
+		A34CC49E1BAD6C7E0061266C /* EPPullCollectionVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EPPullCollectionVC.h; sourceTree = "<group>"; };
+		A34CC49F1BAD6C7E0061266C /* EPPullCollectionVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EPPullCollectionVC.m; sourceTree = "<group>"; };
 		A3507D001BAB987400DCCA54 /* UILabel+ContentSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+ContentSize.h"; sourceTree = "<group>"; };
 		A3507D011BAB987400DCCA54 /* UILabel+ContentSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+ContentSize.m"; sourceTree = "<group>"; };
 		A3C171941BA6AA9400CFC775 /* UIView+WY.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+WY.h"; sourceTree = "<group>"; };
@@ -895,6 +900,8 @@
 				4DE5BAA01A66987C00F0D15E /* EPullNewTableVC.m */,
 				4DE5BAA21A6699C100F0D15E /* EPullAutoNewTableVC.h */,
 				4DE5BAA31A6699C100F0D15E /* EPullAutoNewTableVC.m */,
+				A34CC49E1BAD6C7E0061266C /* EPPullCollectionVC.h */,
+				A34CC49F1BAD6C7E0061266C /* EPPullCollectionVC.m */,
 			);
 			name = pullNew;
 			sourceTree = "<group>";
@@ -1034,6 +1041,7 @@
 				4D18B7D11B144CE700755907 /* AESCrypt.m in Sources */,
 				4D18B7D21B144CE700755907 /* NSData+Base64.m in Sources */,
 				4D18B7D31B144CE700755907 /* NSData+CommonCrypto.m in Sources */,
+				A34CC4A01BAD6C7E0061266C /* EPPullCollectionVC.m in Sources */,
 				A34246561BA8020600548ECE /* HTTPHelper.m in Sources */,
 				4D18B7D41B144CE700755907 /* NSString+Base64.m in Sources */,
 				4DE5BA9E1A66942D00F0D15E /* EPullNewVC.m in Sources */,

@@ -18,6 +18,8 @@
 @property (nonatomic, strong) NSMutableArray *arrData;//数据源
 @property (nonatomic,strong)RefreshControl * refresh;
 
+
+
 @end
 
 @implementation FirViewController
@@ -28,7 +30,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
     self.page = 1;
     self.arrData = [NSMutableArray array];
     NSArray *segmentedArray = [[NSArray alloc]initWithObjects:@"热门",@"广场",@"关注",nil];
@@ -41,11 +42,9 @@
     segmentedControl.backgroundColor = [UIColor clearColor];
     self.navigationItem.titleView = segmentedControl;
     
-    
-    
     self.navigationItem.leftBarButtonItem = nil;
     UICollectionViewFlowLayout *flowLayOut = [[UICollectionViewFlowLayout alloc] init];
-    self.collectionView = [[UICollectionView alloc] initWithFrame:CGRectMake(0,0, kScreenWidth, kScreenHeight-64) collectionViewLayout:flowLayOut];
+    self.collectionView = [[UICollectionView alloc] initWithFrame:CGRectMake(0,0, kScreenWidth, kScreenHeight-kNavBarHeight) collectionViewLayout:flowLayOut];
     self.collectionView.backgroundColor =[UIColor colorWithRed:0.14f green:0.16f blue:0.17f alpha:1.00f];
     self.collectionView.dataSource = self;
     self.collectionView.delegate = self;
@@ -57,14 +56,16 @@
     self.refresh=[[RefreshControl alloc] initWithScrollView:_collectionView delegate:self];
     self.refresh.delegate = self;
     self.refresh.topEnabled=YES;
-    [self.refresh startRefreshingDirection:RefreshDirectionTop];
+    [self requestTopicView_dataSoure_connectionDirection];
+     //进入页面开始刷新
+    //[self.refresh startRefreshingDirection:RefreshDirectionTop];
     
 }
 - (void)refreshControl:(RefreshControl *)refreshControl didEngageRefreshDirection:(RefreshDirection)direction{
     __weak typeof(self)weakSelf=self;
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         __strong typeof(weakSelf)strongSelf=weakSelf;
-        [strongSelf requestTopicView_dataSoure_connectionDirection:direction];
+        [strongSelf requestTopicView_dataSoure_connectionDirection];
     });
 }
 -(void)SelectbuttonAction:(UISegmentedControl *)seg{
@@ -72,46 +73,46 @@
     switch (Index) {
             
         case 0:
+            
+            [self requestTopicView_dataSoure_connectionDirection];
             break;
             
         case 1:
+            
             
             break;
             
         case 2:
             
             break;
-            
-            
-            
         default:
             break;
     }
 }
 #pragma mark - dataSoure
--(void)requestTopicView_dataSoure_connectionDirection:(RefreshDirection)direction
+-(void)requestTopicView_dataSoure_connectionDirection
 {
-    NSString *url = [NSString stringWithFormat:kMGDefaultURL,[@{@"PageIndex":@"0",@"PageSize":@"16"} JSONString]];
+    NSString *url = [NSString stringWithFormat:kMGDefaultURL,[@{@"PageIndex":kStrWithInter(self.page),@"PageSize":@"16"} JSONString]];
     MBProgressHUD *hub = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
     AFHTTPRequestOperationManager *man = [AFHTTPRequestOperationManager manager];
     [man GET:url parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
     [hub hide:YES];
-    if (self.refresh.refreshingDirection==RefreshDirectionTop)
+    if ([responseObject[@"code"] integerValue]== kMGOkStatuCode) {
+        NSArray *totalArr = [NSArray arrayWithArray:responseObject[@"List"]];
+        if ( self.refresh.refreshingDirection ==RefreshingDirectionTop)
         {
             [self.arrData removeAllObjects];
         }
-        [self.refresh finishRefreshingDirection:direction withIsNetData:[NSDate date]];
+        [self.refresh finishRefreshingDirection:RefreshDirectionTop withIsNetData:[NSDate date]];
         self.refresh.bottomEnabled=YES;
         
-    if ([responseObject[@"code"] integerValue]== kMGOkStatuCode) {
-        NSArray *totalArr = [NSArray arrayWithArray:responseObject[@"List"]];
         for (NSDictionary *dict in totalArr) {
             firMode *model =[[firMode alloc]initWithDic:dict];
             [self.arrData  addObject:model];
         }
+        self.page++;
         [self.collectionView reloadData];
-
-    }
+       }
         FLOG(@"responseObject====%@", responseObject);
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         [hub hide:YES];
