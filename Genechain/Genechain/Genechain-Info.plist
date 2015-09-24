@@ -6,6 +6,7 @@
 	<string>en</string>
 	<key>CFBundleDisplayName</key>
 	<string>百年基业</string>
+    
 	<key>CFBundleExecutable</key>
 	<string>${EXECUTABLE_NAME}</string>
 	<key>CFBundleIconFiles</key>

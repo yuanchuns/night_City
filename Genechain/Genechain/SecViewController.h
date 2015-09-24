@@ -7,7 +7,6 @@
 //
 
 #import "T2TViewController.h"
-
 @interface SecViewController : T2TViewController
 
 @end

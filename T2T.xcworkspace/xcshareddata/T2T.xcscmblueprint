@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "732E80212ACF9D0FA54F4EDD39030053F39E146F",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "9A9E4F90147A44C03D94A3977356B9C4D4B521F1" : 0,
+    "732E80212ACF9D0FA54F4EDD39030053F39E146F" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "AC993D99-AEF8-4FDE-BB72-7302D6FC60BC",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "9A9E4F90147A44C03D94A3977356B9C4D4B521F1" : "New",
+    "732E80212ACF9D0FA54F4EDD39030053F39E146F" : "night_City"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "T2T",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "T2T.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/yuanchuns\/night_City.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "732E80212ACF9D0FA54F4EDD39030053F39E146F"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/zhangli4659507\/New.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "9A9E4F90147A44C03D94A3977356B9C4D4B521F1"
+    }
+  ]
+}

@@ -83,8 +83,6 @@
         model.netTYpe = MGNetWorkNotType;
     }
 }
-
-
 - (void)ActionLoginSuccess {
     
     NSNumber *numBool = [kUserDefaults objectForKey:kMGMsgSwitchKey];
